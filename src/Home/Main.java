@@ -17,7 +17,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
 
-
+Boolean g = true;
 
     }
 
