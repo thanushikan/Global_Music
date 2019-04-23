@@ -4,6 +4,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -16,83 +17,6 @@
    <children>
       <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0">
          <children>
-            <Pane fx:id="pnl_EditAccount" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #cad8f9;">
-               <children>
-                  <TextField fx:id="firstNameTExtField" editable="false" layoutX="48.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FirstName" />
-                  <TextField layoutX="247.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="LastName" />
-                  <TextField layoutX="237.0" layoutY="351.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Web Address" />
-                  <TextField layoutX="48.0" layoutY="351.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Organisation Name" />
-                  <TextField layoutX="247.0" layoutY="162.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="addtress 2" />
-                  <TextField layoutX="48.0" layoutY="162.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="address 1" />
-                  <TextField layoutX="247.0" layoutY="212.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Postcode" />
-                  <TextField layoutX="48.0" layoutY="212.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="City" />
-                  <TextField layoutX="237.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contact number" />
-                  <TextField layoutX="48.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contct name" />
-                  <TextField layoutX="237.0" layoutY="301.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Username" />
-                  <TextField layoutX="222.0" layoutY="527.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Payment Method" />
-                  <TextField layoutX="40.0" layoutY="527.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Account Number" />
-                  <ComboBox layoutX="47.0" layoutY="35.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select" />
-                  <Button layoutX="453.0" layoutY="514.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Save" />
-                  <Button layoutX="453.0" layoutY="389.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Cancel" />
-                  <TextField layoutX="48.0" layoutY="301.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email" />
-               </children>
-            </Pane>
-            <Pane fx:id="pnl_ViewBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: gray;">
-               <children>
-                  <TableView layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="580.0">
-                     <columns>
-                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Date" />
-                        <TableColumn editable="false" prefWidth="95.199951171875" resizable="false" text="Performer" />
-                        <TableColumn editable="false" prefWidth="117.60003662109375" resizable="false" text="Venue Address" />
-                        <TableColumn editable="false" prefWidth="108.79998779296875" resizable="false" text="Numer of Tickets" />
-                        <TableColumn editable="false" prefWidth="88.0" resizable="false" text="Price (Each)" />
-                        <TableColumn editable="false" prefWidth="86.4000244140625" resizable="false" text="Total (£)" />
-                     </columns>
-                  </TableView>
-                  <Button layoutX="471.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Exit" />
-                  <Button layoutX="353.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Print" />
-               </children>
-            </Pane>
-            <Pane fx:id="pnl_MakeBooking" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #a895f9;">
-               <children>
-                  <Button layoutX="333.0" layoutY="80.0" mnemonicParsing="false" text="Search" />
-                  <Button layoutX="475.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="?" />
-                  <TextField layoutX="54.0" layoutY="80.0" prefHeight="25.0" prefWidth="279.0" />
-                  <Button layoutX="475.0" layoutY="457.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="Confirm" />
-                  <TextField layoutX="28.0" layoutY="310.0" promptText="How many tickets?" />
-                  <TextField layoutX="28.0" layoutY="357.0" promptText="Price" />
-                  <TableView layoutX="9.0" layoutY="191.0" prefHeight="96.0" prefWidth="562.0">
-                     <columns>
-                        <TableColumn editable="false" prefWidth="88.800048828125" resizable="false" text="Date" />
-                        <TableColumn editable="false" prefWidth="96.7999267578125" resizable="false" text="Time" />
-                        <TableColumn editable="false" prefWidth="120.0" resizable="false" text="Performer" />
-                        <TableColumn editable="false" prefWidth="115.99993896484375" resizable="false" text="Ticket Price (Each)" />
-                        <TableColumn minWidth="0.0" prefWidth="0.0" />
-                        <TableColumn editable="false" prefWidth="138.4000244140625" resizable="false" text="Venue Address" />
-                     </columns>
-                  </TableView>
-               </children>
-            </Pane>
-            <Pane fx:id="pnl_ViewAccount" layoutX="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
-               <children>
-                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="111.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="LastName" />
-                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="111.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FirstName" />
-                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="City" />
-                  <TextField disable="true" editable="false" layoutX="74.0" layoutY="316.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email" />
-                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contact number" />
-                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="366.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Web Address" />
-                  <TextField disable="true" editable="false" layoutX="74.0" layoutY="378.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Organisation Name" />
-                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="316.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Username" />
-                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Account Number" />
-                  <TextField disable="true" editable="false" layoutX="276.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Postcode" />
-                  <TextField disable="true" editable="false" layoutX="276.0" layoutY="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="addtress 2" />
-                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="address 1" />
-                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contct name" />
-                  <Label layoutX="197.0" layoutY="47.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="93.0" text="Title" />
-                  <TextField disable="true" editable="false" layoutX="283.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Payment Method" />
-                  <Button fx:id="btn_EditDetails" layoutX="171.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Edit Deatils" />
-               </children>
-            </Pane>
             <Pane fx:id="pnl_ManageCF" layoutX="222.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: gray;">
                <children>
                   <TableView layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="580.0">
@@ -176,6 +100,47 @@
                   <TextField layoutX="183.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Artist" />
                </children>
             </Pane>
+            <Pane fx:id="pnl_EditAccount" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #cad8f9;">
+               <children>
+                  <TextField fx:id="firstNameTExtField" editable="false" layoutX="48.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FirstName" />
+                  <TextField layoutX="247.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="LastName" />
+                  <TextField layoutX="237.0" layoutY="351.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Web Address" />
+                  <TextField layoutX="48.0" layoutY="351.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Organisation Name" />
+                  <TextField layoutX="247.0" layoutY="162.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="addtress 2" />
+                  <TextField layoutX="48.0" layoutY="162.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="address 1" />
+                  <TextField layoutX="247.0" layoutY="212.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Postcode" />
+                  <TextField layoutX="48.0" layoutY="212.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="City" />
+                  <TextField layoutX="237.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contact number" />
+                  <TextField layoutX="48.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contct name" />
+                  <TextField layoutX="237.0" layoutY="301.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Username" />
+                  <TextField layoutX="222.0" layoutY="527.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Payment Method" />
+                  <TextField layoutX="40.0" layoutY="527.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Account Number" />
+                  <ComboBox layoutX="47.0" layoutY="35.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select" />
+                  <Button layoutX="453.0" layoutY="514.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Save" />
+                  <Button layoutX="453.0" layoutY="389.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Cancel" />
+                  <TextField layoutX="48.0" layoutY="301.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_ViewAccount" layoutX="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
+               <children>
+                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="111.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="LastName" />
+                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="111.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FirstName" />
+                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="City" />
+                  <TextField disable="true" editable="false" layoutX="74.0" layoutY="316.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email" />
+                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contact number" />
+                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="366.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Web Address" />
+                  <TextField disable="true" editable="false" layoutX="74.0" layoutY="378.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Organisation Name" />
+                  <TextField disable="true" editable="false" layoutX="277.0" layoutY="316.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Username" />
+                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Account Number" />
+                  <TextField disable="true" editable="false" layoutX="276.0" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Postcode" />
+                  <TextField disable="true" editable="false" layoutX="276.0" layoutY="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="addtress 2" />
+                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="address 1" />
+                  <TextField disable="true" editable="false" layoutX="69.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contct name" />
+                  <Label layoutX="197.0" layoutY="47.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="93.0" text="Title" />
+                  <TextField disable="true" editable="false" layoutX="283.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Payment Method" />
+                  <Button fx:id="btn_EditDetails" layoutX="171.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Edit Deatils" />
+               </children>
+            </Pane>
             <Pane fx:id="pnl_EditCF" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
                <children>
                   <TextField layoutX="387.0" layoutY="446.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Time" />
@@ -209,18 +174,64 @@
             </Pane>
             <Pane fx:id="pnl_ViewCF" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #99c0ff;">
                <children>
-                  <TableView layoutX="40.0" layoutY="144.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="407.0" prefWidth="429.0">
+                  <TableView layoutY="144.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="407.0" prefWidth="493.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="Date" />
-                        <TableColumn prefWidth="112.0" text="Performer" />
-                        <TableColumn prefWidth="112.0" text="Venue" />
-                        <TableColumn prefWidth="127.199951171875" text="Price" />
+                        <TableColumn prefWidth="112.800048828125" text="Date" />
+                        <TableColumn prefWidth="139.99993896484375" text="Event / Festival Name" />
+                        <TableColumn prefWidth="114.39990234375" text="Venue" />
+                        <TableColumn prefWidth="112.00006103515625" text="Ticket price (From)" />
                      </columns>
                   </TableView>
                   <TextField layoutX="94.0" layoutY="61.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="279.0" />
                   <Button layoutX="373.0" layoutY="61.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" text="Search" />
-                  <Button fx:id="btn_Book" layoutX="492.0" layoutY="222.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="0.0" prefWidth="58.0" text="Book" />
-                  <Button layoutX="492.0" layoutY="144.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="58.0" text="View" />
+                  <Button fx:id="btn_Book" layoutX="508.0" layoutY="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="0.0" prefWidth="58.0" text="Book" />
+                  <Button layoutX="508.0" layoutY="158.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="58.0" text="View" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_MakeBooking" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #a895f9;">
+               <children>
+                  <Button layoutX="333.0" layoutY="80.0" mnemonicParsing="false" text="Search" />
+                  <Button layoutX="475.0" layoutY="495.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="?" />
+                  <TextField layoutX="54.0" layoutY="80.0" prefHeight="25.0" prefWidth="279.0" />
+                  <Button layoutX="475.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="Confirm" />
+                  <TextField layoutX="24.0" layoutY="385.0" promptText="How many tickets?" />
+                  <Label layoutX="74.0" layoutY="139.0" prefHeight="25.0" prefWidth="93.0" text="Start date" />
+                  <Label layoutX="147.0" layoutY="139.0" prefHeight="25.0" prefWidth="93.0" text="End Date" />
+                  <Label layoutX="338.0" layoutY="127.0" prefHeight="25.0" prefWidth="93.0" text="Venue" />
+                  <Label layoutX="74.0" layoutY="105.0" prefHeight="25.0" prefWidth="93.0" text="Festival Name" />
+                  <Label layoutX="338.0" layoutY="152.0" prefHeight="25.0" prefWidth="93.0" text="Address 1" />
+                  <Label layoutX="350.0" layoutY="177.0" prefHeight="25.0" prefWidth="93.0" text="City" />
+                  <Label layoutX="350.0" layoutY="212.0" prefHeight="25.0" prefWidth="93.0" text="Postcode" />
+                  <Label layoutX="132.0" layoutY="275.0" prefHeight="25.0" prefWidth="109.0" text="Ticket Price (Each)" />
+                  <Label layoutX="74.0" layoutY="313.0" prefHeight="25.0" prefWidth="93.0" text="VIP" />
+                  <Label layoutX="162.0" layoutY="313.0" prefHeight="25.0" prefWidth="93.0" text="Standrd" />
+                  <Label layoutX="244.0" layoutY="313.0" prefHeight="25.0" prefWidth="93.0" text="Corparte" />
+                  <Label layoutX="169.0" layoutY="470.0" prefHeight="25.0" prefWidth="109.0" text="Total" />
+                  <Label layoutX="170.0" layoutY="435.0" prefHeight="25.0" prefWidth="109.0" text="VAT" />
+                  <Label layoutX="186.0" layoutY="385.0" prefHeight="17.0" prefWidth="351.0" text="When they enter no of tickets, msgbox popup to confirm">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="59.0" layoutY="338.0" mnemonicParsing="false" text="VIP" />
+                  <RadioButton layoutX="147.0" layoutY="338.0" mnemonicParsing="false" text="Standrd" />
+                  <RadioButton layoutX="226.0" layoutY="338.0" mnemonicParsing="false" text="Corporate" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_ViewBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: gray;">
+               <children>
+                  <TableView layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="580.0">
+                     <columns>
+                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Date" />
+                        <TableColumn editable="false" prefWidth="82.4000244140625" resizable="false" text="Festival" />
+                        <TableColumn editable="false" prefWidth="115.199951171875" resizable="false" text="Venue " />
+                        <TableColumn editable="false" prefWidth="100.0" resizable="false" text="Ticket Quantity " />
+                        <TableColumn editable="false" prefWidth="98.39996337890625" resizable="false" text="Price (Each)" />
+                        <TableColumn editable="false" prefWidth="103.2000732421875" resizable="false" text="Total (£)" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="471.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Exit" />
+                  <Button layoutX="353.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Print" />
                </children>
             </Pane>
          </children>
