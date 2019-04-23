@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Controllers.Application">
    <children>
@@ -54,25 +55,6 @@
                   <Button layoutX="456.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Delete" />
                   <Button layoutX="456.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Edit" />
                   <Label layoutX="118.0" layoutY="31.0" prefHeight="40.0" prefWidth="208.0" text="Customer Accounts">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane fx:id="pnl_ManageBookings" layoutX="223.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: green;">
-               <children>
-                  <TableView layoutX="14.0" layoutY="74.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="466.0">
-                     <columns>
-                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Booking ID" />
-                        <TableColumn editable="false" prefWidth="95.199951171875" resizable="false" text="Date" />
-                        <TableColumn editable="false" prefWidth="133.60003662109375" resizable="false" text="Performer" />
-                        <TableColumn prefWidth="150.39996337890625" text="Venue Address" />
-                     </columns>
-                  </TableView>
-                  <Button layoutX="497.0" layoutY="149.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="56.0" text="Delete" />
-                  <Button layoutX="292.0" layoutY="219.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="261.0" text="BookingID_Hyprlink, It will take it edit page" />
-                  <Label layoutX="139.0" layoutY="26.0" prefHeight="40.0" prefWidth="208.0" text="Manage Bookings">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -219,7 +201,7 @@
                   <RadioButton layoutX="226.0" layoutY="338.0" mnemonicParsing="false" text="Corporate" />
                </children>
             </Pane>
-            <Pane fx:id="pnl_ViewBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: gray;">
+            <Pane fx:id="pnl_ViewBookings" layoutX="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: gray;">
                <children>
                   <TableView layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="580.0">
                      <columns>
@@ -233,6 +215,59 @@
                   </TableView>
                   <Button layoutX="471.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Exit" />
                   <Button layoutX="353.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Print" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_ManageBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: green;">
+               <children>
+                  <TableView layoutX="14.0" layoutY="74.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="466.0">
+                     <columns>
+                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Booking ID" />
+                        <TableColumn editable="false" prefWidth="95.199951171875" resizable="false" text="Date" />
+                        <TableColumn editable="false" prefWidth="133.60003662109375" resizable="false" text="Performer" />
+                        <TableColumn prefWidth="150.39996337890625" text="Venue Address" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="497.0" layoutY="149.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="56.0" text="Delete" />
+                  <Button layoutX="292.0" layoutY="219.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="261.0" text="BookingID_Hyprlink, It will take it edit page" />
+                  <Label layoutX="139.0" layoutY="26.0" prefHeight="40.0" prefWidth="208.0" text="Manage Bookings">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_SelectInvoice" layoutX="220.0" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
+               <children>
+                  <Pane layoutX="284.0" layoutY="100.0" prefHeight="501.0" prefWidth="296.0">
+                     <children>
+                        <Label layoutX="16.0" layoutY="42.0" text="Organisation Name" />
+                        <Label fx:id="lbl_Customer_Name" layoutX="17.0" layoutY="66.0" text="Customer name" />
+                        <Label layoutX="234.0" layoutY="42.0" text="Order Date" />
+                        <Label layoutX="253.0" layoutY="416.0" text="Label" />
+                        <Label fx:id="lbl_Price" layoutX="253.0" layoutY="398.0" text="Label" />
+                        <Label layoutX="253.0" layoutY="433.0" text="Label" />
+                        <Label layoutX="16.0" layoutY="434.0" text="Total Number Of Tickets" />
+                        <Label layoutX="16.0" layoutY="400.0" text="Price Per Ticket" />
+                        <Label layoutX="16.0" layoutY="417.0" text="VAT (20%)" />
+                        <Label layoutX="17.0" layoutY="85.0" />
+                        <Label layoutX="253.0" layoutY="465.0" text="Label" />
+                        <Label layoutX="16.0" layoutY="466.0" text="Total Number Of Tickets" />
+                        <Label fx:id="lbl_Address_Line_1" layoutX="17.0" layoutY="85.0" text="Address Line 1" />
+                        <Label fx:id="lbl_Address_Line_2" layoutX="17.0" layoutY="105.0" text="Address Line 2" />
+                        <Label fx:id="lbl_Address_Line_21" layoutX="17.0" layoutY="121.0" text="Postcode" />
+                     </children>
+                  </Pane>
+                  <TableView layoutY="100.0" prefHeight="502.0" prefWidth="284.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Date" />
+                        <TableColumn prefWidth="75.0" text="Venue " />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="207.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice">
+                     <font>
+                        <Font name="Consolas" size="35.0" />
+                     </font>
+                  </Text>
                </children>
             </Pane>
          </children>
@@ -299,7 +334,7 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="200.0" text="Monthly Invoices">
+                  <Button fx:id="btn_Invoices" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="200.0" text="Monthly Invoices">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>

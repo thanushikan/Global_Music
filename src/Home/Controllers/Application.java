@@ -12,6 +12,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
+
 import javafx.scene.layout.Pane;
 
 
@@ -20,15 +21,16 @@ public class Application implements Initializable {
     private Pane pnl_ViewAccount, pnl_EditAccount, pnl_ViewCF,pnl_MakeBooking,pnl_ViewBookings,pnl_AddCF,pnl_ManageCF;
 
     @FXML
-    private Pane pnl_CustomerAccounts,pnl_ManageBookings,pnl_EditCF;
+    private Pane pnl_CustomerAccounts,pnl_ManageBookings,pnl_EditCF,pnl_SelectInvoice;
 
     @FXML
     private Label lbl_ViewCF;
+
     @FXML
     private Hyperlink View;
 
     @FXML
-    private Button btn_EditDetails,btn_ManageBookings,btn_EditCF;
+    private Button btn_EditDetails,btn_ManageBookings,btn_EditCF,btn_Invoices;
 
     @FXML
     private Button btn_Account,btn_ViewCF,btn_MakeBooking,btn_Book,btn_ViewBookings,btn_AddCF,btn_ManageCF,btn_CustomerAccounts;
@@ -64,8 +66,8 @@ public class Application implements Initializable {
         else if (event.getSource() == btn_EditCF){
             pnl_EditCF.toFront();
         }
-        else if (event.getSource() == View){
-            pnl_ViewCF.toFront();
+        else if (event.getSource() == btn_Invoices){
+            pnl_SelectInvoice.toFront();
         }
 
 
