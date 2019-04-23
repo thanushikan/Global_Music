@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
@@ -265,7 +266,8 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="220.0" style="-fx-background-color: #ff7f7f;" />
+                  <Hyperlink fx:id="View" onAction="#handleButtonAction" prefHeight="23.0" prefWidth="218.0" text="Hyperlink" />
+                  <Label fx:id="lbl_ViewCF" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#handleButtonAction" prefHeight="46.0" prefWidth="220.0" style="-fx-background-color: #ff7f7f;" text="lbl" />
                   <Button fx:id="btn_AddCF" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="200.0" text="Add Concerts / Festivals">
                      <font>
                         <Font name="System Bold" size="13.0" />

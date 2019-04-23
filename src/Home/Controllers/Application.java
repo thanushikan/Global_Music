@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import com.jfoenix.responsive.JFXResponsiveHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
@@ -22,7 +23,10 @@ public class Application implements Initializable {
     @FXML
     private Pane pnl_CustomerAccounts,pnl_ManageBookings,pnl_EditCF;
 
-
+    @FXML
+    private Label lbl_ViewCF;
+    @FXML
+    private Hyperlink View;
 
     @FXML
     private Button btn_EditDetails,btn_ManageBookings,btn_EditCF;
@@ -60,6 +64,9 @@ public class Application implements Initializable {
         }
         else if (event.getSource() == btn_EditCF){
             pnl_EditCF.toFront();
+        }
+        else if (event.getSource() == View){
+            pnl_ViewCF.toFront();
         }
 
 
