@@ -3,15 +3,14 @@ package Home.Controllers;
 
 
 import java.net.URL;
-import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 
 
-import Home.AlertBoxes;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 
 import javafx.scene.layout.Pane;
@@ -29,8 +28,6 @@ public class Application implements Initializable {
 
     @FXML
     private Hyperlink View;
-    @FXML
-    private Button btn_MB_Confirm;
 
     @FXML
     private Button btn_EditDetails,btn_ManageBookings,btn_EditCF,btn_Invoices;
@@ -53,38 +50,28 @@ public class Application implements Initializable {
             pnl_MakeBooking.toFront();
         } else if (event.getSource() == btn_ViewBookings) {
             pnl_ViewBookings.toFront();
-        } else if (event.getSource() == btn_AddCF) {
+        }
+        else if (event.getSource() == btn_AddCF) {
             pnl_AddCF.toFront();
-        } else if (event.getSource() == btn_ManageCF) {
+        }
+        else if (event.getSource() == btn_ManageCF){
             pnl_ManageCF.toFront();
-        } else if (event.getSource() == btn_CustomerAccounts) {
+        }
+        else if (event.getSource() == btn_CustomerAccounts){
             pnl_CustomerAccounts.toFront();
-        } else if (event.getSource() == btn_ManageBookings) {
+        }
+        else if (event.getSource() == btn_ManageBookings){
             pnl_ManageBookings.toFront();
-        } else if (event.getSource() == btn_EditCF) {
+        }
+        else if (event.getSource() == btn_EditCF){
             pnl_EditCF.toFront();
-        } else if (event.getSource() == btn_Invoices) {
+        }
+        else if (event.getSource() == btn_Invoices){
             pnl_SelectInvoice.toFront();
         }
 
+
     }
-
-
-
-public void Confirm_MakeBooking (ActionEvent event){
-        btn_MB_Confirm.setOnAction(e -> AlertBoxes.display("Pay Now","Enter the Details"));
-        Label L = new Label();
-
-
-}
-
-
-
-
-
-
-
-
 
 
 

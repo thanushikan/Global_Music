@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="vv1">
-      <change afterPath="$PROJECT_DIR$/src/Home/AlertBoxes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Controllers/Application.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Main.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/Home/Controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" afterDir="false" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +76,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
         <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="12784">
@@ -96,12 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +96,6 @@
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,16 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
-=======
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Home/AlertBoxes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
             </state>
           </provider>
         </entry>
@@ -152,7 +128,6 @@
     <findStrings>
       <find>btn_ViewCf</find>
       <find>btn_edi</find>
-      <find>btn_MB</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -184,27 +159,17 @@
         <option value="$PROJECT_DIR$/src/Home/fxml/Main.fxml" />
         <option value="$PROJECT_DIR$/src/Home/Controllers/Main.java" />
         <option value="$PROJECT_DIR$/src/Home/Controllers/Application.java" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Home/Main.java" />
         <option value="$PROJECT_DIR$/src/Home/Style.css" />
-=======
-        <option value="$PROJECT_DIR$/src/Home/AlertBoxes.java" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
     <option name="x" value="180" />
     <option name="y" value="100" />
     <option name="width" value="1615" />
     <option name="height" value="880" />
-=======
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -265,16 +230,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-=======
-            </path>
-            <path>
-              <item name="Global_Music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Global_Music" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
             </path>
             <path>
               <item name="Global_Music" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +265,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556635272631" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556030163527" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -440,21 +395,12 @@
       <workItem from="1555981139287" duration="184000" />
       <workItem from="1555981341619" duration="15000" />
       <workItem from="1555981679766" duration="326000" />
-<<<<<<< HEAD
       <workItem from="1556022800184" duration="5085000" />
       <workItem from="1556137869127" duration="1016000" />
       <workItem from="1556140805933" duration="6000" />
       <workItem from="1556141814655" duration="1615000" />
       <workItem from="1556538426110" duration="979000" />
       <workItem from="1556630106155" duration="1796000" />
-=======
-      <workItem from="1556022800184" duration="5227000" />
-      <workItem from="1556210812767" duration="30000" />
-      <workItem from="1556260421962" duration="530000" />
-      <workItem from="1556264816472" duration="3786000" />
-      <workItem from="1556310452893" duration="87000" />
-      <workItem from="1556627641946" duration="7583000" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
     </task>
     <task id="LOCAL-00001" summary="vv1">
       <created>1556028861938</created>
@@ -467,11 +413,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="71216000" />
-=======
-    <option name="totallyTimeSpent" value="76134000" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -486,11 +428,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16644295" />
-=======
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.16778524" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
       <window_info id="Structure" order="1" weight="0.24630873" />
       <window_info id="Favorites" order="2" weight="0.3281879" />
       <window_info id="Designer" order="3" />
@@ -528,27 +466,27 @@
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16778524" />
-      <window_info id="Structure" order="1" weight="0.24630873" />
-      <window_info id="Favorites" order="2" weight="0.3281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14697987" />
+      <window_info id="Structure" order="1" weight="0.2495935" />
+      <window_info id="Favorites" order="2" weight="0.3292683" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21104816" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989455" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292011" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32719547" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" />
@@ -598,7 +536,6 @@
     <entry file="file://$PROJECT_DIR$/src/Home/Controllers/ViewCF.java" />
     <entry file="file://$PROJECT_DIR$/src/Home/fxml/EditUserAccount.fxml" />
     <entry file="file://$PROJECT_DIR$/../Global-Music/src/Home/Main.java" />
-<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ResourceBundle.java" />
     <entry file="file://$PROJECT_DIR$/src/Home/fxml/Application.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,14 +544,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="376" column="22" selection-start-line="376" selection-start-column="22" selection-end-line="376" selection-end-column="22" />
-        </state>
-      </provider>
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/fxml/Responsive.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -632,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12784">
@@ -644,47 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/fxml/Application.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="247" column="127" selection-start-line="247" selection-start-column="127" selection-end-line="247" selection-end-column="127" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/AlertBoxes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
->>>>>>> 7422e0f8312ea8c8df0fd9d289cfcab819afa587
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
