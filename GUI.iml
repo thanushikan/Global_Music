@@ -7,9 +7,22 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
-    <orderEntry type="library" exported="" name="java" level="project" />
-    <orderEntry type="library" exported="" name="java1" level="project" />
-    <orderEntry type="library" name="jfoenix-9.0.8" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library name="javafx-11.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/javafx-swt.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.base.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.controls.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.fxml.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.graphics.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.media.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.swing.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.web.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
