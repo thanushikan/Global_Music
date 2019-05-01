@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="vv1">
 <<<<<<< HEAD
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Home/AlertBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/AlertBoxes.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -12,12 +11,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Main.java" afterDir="false" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-      <change afterPath="$PROJECT_DIR$/src/Home/AlertBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/Controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" afterDir="false" />
->>>>>>> parent of c0be18e... cha
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,13 +113,8 @@
         <entry file="file://$PROJECT_DIR$/src/Home/Style.css">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="250">
               <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-=======
-            <state relative-caret-position="377">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
->>>>>>> parent of c0be18e... cha
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -290,14 +278,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
-<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556638268498" />
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556030163527" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556635272631" />
->>>>>>> parent of c0be18e... cha
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -305,7 +289,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -346,7 +330,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Home.Main" />
       <module name="GUI" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\Thanush\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Home.sample.*" />
@@ -433,7 +417,6 @@
       <workItem from="1556260421962" duration="530000" />
       <workItem from="1556264816472" duration="3786000" />
       <workItem from="1556310452893" duration="87000" />
-<<<<<<< HEAD
       <workItem from="1556627641946" duration="9620000" />
 =======
       <workItem from="1556022800184" duration="5085000" />
@@ -443,9 +426,6 @@
       <workItem from="1556538426110" duration="979000" />
       <workItem from="1556630106155" duration="1796000" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-      <workItem from="1556627641946" duration="7583000" />
->>>>>>> parent of c0be18e... cha
     </task>
     <task id="LOCAL-00001" summary="vv1">
       <created>1556028861938</created>
@@ -459,14 +439,10 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="78171000" />
 =======
     <option name="totallyTimeSpent" value="71216000" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <option name="totallyTimeSpent" value="76134000" />
->>>>>>> parent of c0be18e... cha
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -479,7 +455,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16644295" />
       <window_info id="Structure" order="1" weight="0.24630873" />
@@ -491,14 +466,10 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
 <<<<<<< HEAD
-<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.21104816" />
 =======
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2592068" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21104816" />
->>>>>>> parent of c0be18e... cha
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,18 +559,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/fxml/UserAccount.fxml" />
 <<<<<<< HEAD
-<<<<<<< HEAD
     <entry file="jar://$PATH_TO_FX$/javafx.graphics.jar!/javafx/application/Application.class">
-=======
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
->>>>>>> parent of c0be18e... cha
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src.zip!/javafx.graphics/javafx/application/Application.java">
+    <entry file="jar://$PATH_TO_FX$/src.zip!/javafx.graphics/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-544">
           <caret line="349" column="25" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
@@ -644,14 +611,10 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <entry file="jar://$PATH_TO_FX$/src.zip!/javafx.base/javafx/event/EventHandler.java">
 =======
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
->>>>>>> parent of c0be18e... cha
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12784">
           <caret line="810" column="63" selection-start-line="810" selection-start-column="63" selection-end-line="810" selection-end-column="63" />
@@ -678,13 +641,8 @@
     <entry file="file://$PROJECT_DIR$/src/Home/Style.css">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
-<<<<<<< HEAD
         <state relative-caret-position="250">
           <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-=======
-        <state relative-caret-position="377">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
->>>>>>> parent of c0be18e... cha
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
