@@ -52,7 +52,7 @@ public class AlertBoxes {
 
         DialogPane layout = new DialogPane();
         layout.getChildren().add(cancelButton);
-        layout.ge tChildren().add(yesButton);
+        layout.getChildren().add(yesButton);
         //layout.setAlignment(Pos.BOTTOM_RIGHT);
 
         Scene scence = new Scene(layout);
