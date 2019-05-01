@@ -4,7 +4,6 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="vv1">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Home/AlertBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/AlertBoxes.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -14,15 +13,10 @@
       <change beforePath="$PROJECT_DIR$/src/Home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Main.java" afterDir="false" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
 =======
-=======
->>>>>>> parent of c0be18e... cha
       <change afterPath="$PROJECT_DIR$/src/Home/AlertBoxes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Controllers/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/fxml/Application.fxml" afterDir="false" />
-<<<<<<< HEAD
->>>>>>> parent of c0be18e... cha
-=======
 >>>>>>> parent of c0be18e... cha
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -127,13 +121,8 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="250">
               <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-=======
-            <state relative-caret-position="377">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
->>>>>>> parent of c0be18e... cha
 =======
             <state relative-caret-position="377">
               <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
@@ -302,14 +291,10 @@
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556638268498" />
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556030163527" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556635272631" />
->>>>>>> parent of c0be18e... cha
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556635272631" />
 >>>>>>> parent of c0be18e... cha
@@ -449,7 +434,6 @@
       <workItem from="1556264816472" duration="3786000" />
       <workItem from="1556310452893" duration="87000" />
 <<<<<<< HEAD
-<<<<<<< HEAD
       <workItem from="1556627641946" duration="9620000" />
 =======
       <workItem from="1556022800184" duration="5085000" />
@@ -459,9 +443,6 @@
       <workItem from="1556538426110" duration="979000" />
       <workItem from="1556630106155" duration="1796000" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-      <workItem from="1556627641946" duration="7583000" />
->>>>>>> parent of c0be18e... cha
 =======
       <workItem from="1556627641946" duration="7583000" />
 >>>>>>> parent of c0be18e... cha
@@ -479,14 +460,10 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="78171000" />
 =======
     <option name="totallyTimeSpent" value="71216000" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <option name="totallyTimeSpent" value="76134000" />
->>>>>>> parent of c0be18e... cha
 =======
     <option name="totallyTimeSpent" value="76134000" />
 >>>>>>> parent of c0be18e... cha
@@ -515,14 +492,10 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.21104816" />
 =======
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2592068" />
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21104816" />
->>>>>>> parent of c0be18e... cha
 =======
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21104816" />
 >>>>>>> parent of c0be18e... cha
@@ -616,11 +589,7 @@
     <entry file="file://$PROJECT_DIR$/src/Home/fxml/UserAccount.fxml" />
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     <entry file="jar://$PATH_TO_FX$/javafx.graphics.jar!/javafx/application/Application.class">
-=======
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
->>>>>>> parent of c0be18e... cha
 =======
     <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
 >>>>>>> parent of c0be18e... cha
@@ -676,14 +645,10 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     <entry file="jar://$PATH_TO_FX$/src.zip!/javafx.base/javafx/event/EventHandler.java">
 =======
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
 >>>>>>> 43791031e1eac68499f58804a1a6027b842f20b7
-=======
-    <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
->>>>>>> parent of c0be18e... cha
 =======
     <entry file="jar://$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
 >>>>>>> parent of c0be18e... cha
@@ -714,13 +679,8 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
         <state relative-caret-position="250">
           <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-=======
-        <state relative-caret-position="377">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
->>>>>>> parent of c0be18e... cha
 =======
         <state relative-caret-position="377">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
