@@ -6,13 +6,14 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
+import Home.Connectivity.ConnectionClass;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
-
+import  java.sql.*;
 import javafx.scene.layout.Pane;
 
 
@@ -35,9 +36,22 @@ public class Application implements Initializable {
     @FXML
     private Button btn_Account,btn_ViewCF,btn_MakeBooking,btn_Book,btn_ViewBookings,btn_AddCF,btn_ManageCF,btn_CustomerAccounts;
 
+    public ConnectionClass connectionClass;
     @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btn_Account) {
+            try{
+                connectionClass = new ConnectionClass();
+                Connection connection = connectionClass.GetConnection();
+                String sql= "INSERT INTO user('firstName', 'lastName', 'Address', 'Postcode') VALUES ('test1', 'test1', 'test1', 'test1')";
+                Statement statement = connection.createStatement();
+                statement.executeUpdate(sql);
+            }
+            catch (Exception ex){
+                System.out.println(ex.fillInStackTrace());
+            }
+
+
             pnl_ViewAccount.toFront();
 
         } else if (event.getSource() == btn_EditDetails) {
@@ -72,10 +86,6 @@ public class Application implements Initializable {
 
 
     }
-
-
-
-
 
 
     @Override
