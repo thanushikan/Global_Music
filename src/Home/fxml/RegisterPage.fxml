@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="372.0" layoutY="567.0" mnemonicParsing="false" text="Confirm Entered Details" />
+      <Label layoutX="33.0" layoutY="182.0" prefHeight="25.0" prefWidth="35.0" text="Title">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="256.0" prefHeight="25.0" prefWidth="71.0" text="Last Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="221.0" prefHeight="25.0" prefWidth="71.0" text="First Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="497.0" prefHeight="26.0" prefWidth="121.0" text="Confirm Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="466.0" prefHeight="25.0" prefWidth="63.0" text="Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="471.0" prefHeight="25.0" prefWidth="71.0" text="Postcode">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="289.0" prefHeight="25.0" prefWidth="100.0" text="Phone Number">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="435.0" prefHeight="25.0" prefWidth="71.0" text="City">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="362.0" prefHeight="25.0" prefWidth="71.0" text=" Address 1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="399.0" prefHeight="25.0" prefWidth="71.0" text=" Address 2">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="438.0" prefHeight="25.0" prefWidth="93.0" text="Confirm Email">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="138.0" layoutY="471.0" promptText="Postcode" />
+      <TextField layoutX="519.0" layoutY="435.0" promptText="Confirm email" />
+      <TextField layoutX="139.0" layoutY="222.0" promptText="Enter First Name" />
+      <TextField layoutX="139.0" layoutY="289.0" promptText="Enter Phone Number" />
+      <TextField layoutX="139.0" layoutY="435.0" promptText="Enter Town" />
+      <TextField layoutX="139.0" layoutY="256.0" promptText="Enter Last Name" />
+      <TextField layoutX="139.0" layoutY="363.0" promptText="Enter 1st line of Address" />
+      <TextField layoutX="139.0" layoutY="400.0" promptText="Enter 2nd Line of Address" />
+      <MenuButton layoutX="139.0" layoutY="182.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="115.0">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Mrs." />
+          <MenuItem mnemonicParsing="false" text="Miss." />
+            <MenuItem mnemonicParsing="false" text="Ms. " />
+            <MenuItem mnemonicParsing="false" text="Dr." />
+        </items>
+      </MenuButton>
+      <Label layoutX="243.0" layoutY="23.0" prefHeight="37.0" prefWidth="113.0" text="Register">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="171.0" prefHeight="20.0" prefWidth="93.0" text=" Web Address">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="330.0" prefHeight="17.0" prefWidth="71.0" text="Phone No.">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="143.0" text="Organisation Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="111.0" prefHeight="20.0" prefWidth="93.0" text="Contact Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="139.0" layoutY="326.0" promptText="Enter Phone Number" />
+      <TextField layoutX="493.0" layoutY="108.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter Contact Name" />
+      <TextField editable="false" layoutX="494.0" layoutY="138.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter Organisation Name " />
+      <TextField layoutX="493.0" layoutY="169.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter Web Address" />
+      <Label layoutX="32.0" layoutY="108.0" prefHeight="26.0" prefWidth="114.0" text="Account Type">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="139.0" layoutY="107.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="115.0">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Genral Public" />
+            <MenuItem mnemonicParsing="false" text="Corporate " />
+            <MenuItem mnemonicParsing="false" text="Festival Orginser" />
+         </items>
+      </MenuButton>
+      <Label layoutX="345.0" layoutY="406.0" prefHeight="25.0" prefWidth="93.0" text="Email Address">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="519.0" layoutY="464.0" promptText="password" />
+      <PasswordField layoutX="519.0" layoutY="496.0" promptText="confirm password" />
+      <TextField layoutX="519.0" layoutY="404.0" promptText="Login email" />
+      <Pane layoutX="314.0" layoutY="221.0" prefHeight="161.0" prefWidth="358.0" style="-fx-background-color: #edf3ff;">
+         <children>
+            <Label layoutX="49.0" layoutY="53.0" text="Card No." />
+            <Label layoutX="50.0" layoutY="26.0" text="Card holder" />
+            <Label layoutX="50.0" layoutY="80.0" text="exp date" />
+            <Label layoutX="50.0" layoutY="107.0" text="cvc" />
+            <TextField layoutX="179.0" layoutY="22.0" prefHeight="26.0" prefWidth="158.0" />
+            <TextField layoutX="179.0" layoutY="49.0" prefHeight="26.0" prefWidth="158.0" />
+            <TextField layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="158.0" />
+            <TextField layoutX="179.0" layoutY="103.0" prefHeight="26.0" prefWidth="158.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
