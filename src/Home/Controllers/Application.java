@@ -43,7 +43,7 @@ public class Application implements Initializable {
             try{
                 connectionClass = new ConnectionClass();
                 Connection connection = connectionClass.GetConnection();
-                String sql= "INSERT INTO user('firstName', 'lastName', 'Address', 'Postcode') VALUES ('test1', 'test1', 'test1', 'test1')";
+                String sql= "INSERT INTO `user` (`firstName`, `lastName`, `Address`, `Postcode`) VALUES ('test', 'test', 'testlastname', 'testaddress')";
                 Statement statement = connection.createStatement();
                 statement.executeUpdate(sql);
             }

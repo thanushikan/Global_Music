@@ -18,10 +18,10 @@ public class ConnectionClass {
         }
         catch(Exception ex) {
            // System.out.println("Error: unable to load driver class!");
-            System.out.println(ex.fillInStackTrace());
+            System.out.println(ex.getCause());
             System.exit(1);
         }
-        return null;
+        return connection;
     }
 
 
