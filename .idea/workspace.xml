@@ -77,6 +77,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -93,6 +94,12 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/Home/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
             </state>
           </provider>
         </entry>
@@ -100,8 +107,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Connectivity/ConnectionClass.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="181">
               <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+=======
+            <state relative-caret-position="1071">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,6 +121,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,11 +134,18 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="136">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
+=======
+            <state relative-caret-position="799">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
             </state>
           </provider>
         </entry>
@@ -425,7 +445,15 @@
       <workItem from="1556141814655" duration="1615000" />
       <workItem from="1556538426110" duration="979000" />
       <workItem from="1556630106155" duration="1796000" />
+<<<<<<< HEAD
       <workItem from="1556708126158" duration="7926000" />
+=======
+      <workItem from="1556718095677" duration="43000" />
+      <workItem from="1556718197113" duration="65000" />
+      <workItem from="1556718368441" duration="232000" />
+      <workItem from="1556718806996" duration="21000" />
+      <workItem from="1556796607408" duration="50000" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
     </task>
     <task id="LOCAL-00001" summary="vv1">
       <created>1556028861938</created>
@@ -438,7 +466,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="79142000" />
+=======
+    <option name="totallyTimeSpent" value="71627000" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -453,7 +485,11 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.34630874" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17718121" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
       <window_info id="Structure" order="1" weight="0.24630873" />
       <window_info id="Favorites" order="2" weight="0.3281879" />
       <window_info id="Designer" order="3" />
@@ -593,6 +629,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar!/com/mysql/jdbc/Driver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -617,23 +654,42 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/../Global_Music - Copy/src/Home/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/Home/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
+=======
+        <state relative-caret-position="1071">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="769" column="51" lean-forward="true" selection-start-line="769" selection-start-column="51" selection-end-line="769" selection-end-column="51" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Home/AlertBoxes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+>>>>>>> ac73f33eb4bcb9f71855b81e695ef22b71026a38
         </state>
       </provider>
     </entry>
