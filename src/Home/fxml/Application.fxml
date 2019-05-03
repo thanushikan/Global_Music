@@ -145,25 +145,6 @@
                   <Button layoutX="353.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Print" />
                </children>
             </Pane>
-            <Pane fx:id="pnl_ManageBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: green;">
-               <children>
-                  <TableView layoutX="14.0" layoutY="74.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="466.0">
-                     <columns>
-                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Booking ID" />
-                        <TableColumn editable="false" prefWidth="95.199951171875" resizable="false" text="Date" />
-                        <TableColumn editable="false" prefWidth="133.60003662109375" resizable="false" text="Performer" />
-                        <TableColumn prefWidth="150.39996337890625" text="Venue Address" />
-                     </columns>
-                  </TableView>
-                  <Button layoutX="497.0" layoutY="149.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="56.0" text="Delete" />
-                  <Button layoutX="292.0" layoutY="219.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="261.0" text="BookingID_Hyprlink, It will take it edit page" />
-                  <Label layoutX="139.0" layoutY="26.0" prefHeight="40.0" prefWidth="208.0" text="Manage Bookings">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
             <Pane fx:id="pnl_SelectInvoice" layoutX="220.0" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
                <children>
                   <Pane layoutX="284.0" layoutY="100.0" prefHeight="501.0" prefWidth="296.0">
@@ -208,7 +189,7 @@
                   <DatePicker layoutX="408.0" layoutY="294.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="130.0" promptText="End Date" />
                   <TextField layoutX="210.0" layoutY="364.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Address line 1" />
                   <TextField layoutX="31.0" layoutY="332.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (VIP)" />
-                  <Button layoutX="463.0" layoutY="561.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
+                  <Button layoutX="427.0" layoutY="550.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="135.0" text="Save &amp; Publish" />
                   <TextField layoutX="390.0" layoutY="332.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Corporate)" />
                   <TextField layoutX="211.0" layoutY="332.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Standrd)" />
                   <TextField layoutX="27.0" layoutY="294.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="220.0" promptText="Festival Name" />
@@ -229,9 +210,50 @@
                   </TableView>
                </children>
             </Pane>
+            <Pane fx:id="pnl_ManageBookings" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: green;">
+               <children>
+                  <TableView layoutX="14.0" layoutY="74.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="466.0">
+                     <columns>
+                        <TableColumn editable="false" prefWidth="85.60003662109375" resizable="false" text="Booking ID" />
+                        <TableColumn editable="false" prefWidth="95.199951171875" resizable="false" text="Date" />
+                        <TableColumn editable="false" prefWidth="133.60003662109375" resizable="false" text="Performer" />
+                        <TableColumn prefWidth="150.39996337890625" text="Venue Address" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="497.0" layoutY="149.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="56.0" text="Delete" />
+                  <Button layoutX="292.0" layoutY="219.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="261.0" text="BookingID_Hyprlink, It will take it edit page" />
+                  <Label layoutX="139.0" layoutY="26.0" prefHeight="40.0" prefWidth="208.0" text="Manage Bookings">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_MyAccount" layoutX="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
+               <children>
+                  <Label fx:id="lbl_MA_tilte" layoutX="227.0" layoutY="29.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="93.0" text="Title.." />
+                  <Button fx:id="btn_MA_EditDetails" layoutX="171.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Edit Deatils" />
+                  <Label layoutX="226.0" layoutY="75.0" prefHeight="18.0" prefWidth="129.0" text="First Name" />
+                  <Label layoutX="355.0" layoutY="220.0" prefHeight="18.0" prefWidth="129.0" text="Last Name " />
+                  <Label layoutX="97.0" layoutY="127.0" prefHeight="18.0" prefWidth="129.0" text="Address Line 1" />
+                  <Label layoutX="226.0" layoutY="127.0" prefHeight="18.0" prefWidth="129.0" text="Address Line 2" />
+                  <Label layoutX="115.0" layoutY="167.0" prefHeight="18.0" prefWidth="129.0" text="City " />
+                  <Label layoutX="240.0" layoutY="167.0" prefHeight="18.0" prefWidth="129.0" text="Postcode" />
+                  <Label layoutX="209.0" layoutY="229.0" prefHeight="18.0" prefWidth="129.0" text="Contact Number" />
+                  <Label layoutX="115.0" layoutY="220.0" prefHeight="18.0" prefWidth="129.0" text="Email" />
+                  <Label layoutX="97.0" layoutY="302.0" prefHeight="18.0" prefWidth="129.0" text="Contact Name" />
+                  <Label layoutX="226.0" layoutY="302.0" prefHeight="18.0" prefWidth="129.0" text="Organisation Name" />
+                  <Label layoutX="97.0" layoutY="381.0" prefHeight="18.0" prefWidth="129.0" text="Username" />
+                  <Label layoutX="80.0" layoutY="443.0" prefHeight="18.0" prefWidth="129.0" text="Account Number" />
+                  <Label layoutX="97.0" layoutY="345.0" prefHeight="18.0" prefWidth="129.0" text="Web Address" />
+                  <Label layoutX="369.0" layoutY="327.0" prefHeight="18.0" prefWidth="129.0" text="Payment Method" />
+                  <Label layoutX="97.0" layoutY="35.0" text="Title" />
+                  <Label layoutX="97.0" layoutY="61.0" text="Name" />
+               </children>
+            </Pane>
             <Pane fx:id="pnl_EditAccount" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #cad8f9;">
                <children>
-                  <TextField fx:id="txtF_EA_firstName" editable="false" layoutX="48.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="First Name" />
+                  <TextField fx:id="txtF_EA_firstName" layoutX="48.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="First Name" />
                   <TextField fx:id="txtF_EA_lastName" layoutX="247.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Last Name" />
                   <TextField fx:id="txtF_EA_web" layoutX="237.0" layoutY="351.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Web Address" />
                   <TextField fx:id="txtF_EA_orgName" layoutX="48.0" layoutY="403.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Organisation Name" />
@@ -249,26 +271,6 @@
                   <TextField fx:id="txtF_EA_email" layoutX="48.0" layoutY="301.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email" />
                   <ChoiceBox fx:id="cb_EA_tiltle" layoutX="47.0" layoutY="39.0" prefWidth="150.0" />
                   <Label layoutX="408.0" layoutY="31.0" text="Account Type" />
-               </children>
-            </Pane>
-            <Pane fx:id="pnl_MyAccount" layoutX="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #f9f6ca;">
-               <children>
-                  <Label fx:id="lbl_MA_tilte" layoutX="162.0" layoutY="29.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="93.0" text="Title" />
-                  <Button fx:id="btn_MA_EditDetails" layoutX="171.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Edit Deatils" />
-                  <Label layoutX="161.0" layoutY="83.0" prefHeight="18.0" prefWidth="129.0" text="First Name" />
-                  <Label layoutX="313.0" layoutY="83.0" prefHeight="18.0" prefWidth="129.0" text="Last Name " />
-                  <Label layoutX="97.0" layoutY="127.0" prefHeight="18.0" prefWidth="129.0" text="Address Line 1" />
-                  <Label layoutX="226.0" layoutY="127.0" prefHeight="18.0" prefWidth="129.0" text="Address Line 2" />
-                  <Label layoutX="115.0" layoutY="167.0" prefHeight="18.0" prefWidth="129.0" text="City " />
-                  <Label layoutX="240.0" layoutY="167.0" prefHeight="18.0" prefWidth="129.0" text="Postcode" />
-                  <Label layoutX="209.0" layoutY="229.0" prefHeight="18.0" prefWidth="129.0" text="Contact Number" />
-                  <Label layoutX="115.0" layoutY="220.0" prefHeight="18.0" prefWidth="129.0" text="Email" />
-                  <Label layoutX="97.0" layoutY="302.0" prefHeight="18.0" prefWidth="129.0" text="Contact Name" />
-                  <Label layoutX="226.0" layoutY="302.0" prefHeight="18.0" prefWidth="129.0" text="Organisation Name" />
-                  <Label layoutX="97.0" layoutY="381.0" prefHeight="18.0" prefWidth="129.0" text="Username" />
-                  <Label layoutX="80.0" layoutY="443.0" prefHeight="18.0" prefWidth="129.0" text="Account Number" />
-                  <Label layoutX="97.0" layoutY="345.0" prefHeight="18.0" prefWidth="129.0" text="Web Address" />
-                  <Label layoutX="369.0" layoutY="327.0" prefHeight="18.0" prefWidth="129.0" text="Payment Method" />
                </children>
             </Pane>
          </children>
@@ -309,7 +311,7 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btn_EditCF" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="221.0" text="Edt Concerts / Festivals">
+                  <Button fx:id="btn_EditCF" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="220.0" text="Edt Concerts / Festivals">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
