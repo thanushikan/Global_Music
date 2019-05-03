@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="175.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.fxml.RegistrationPaths">
+   <children>
+      <Pane prefHeight="176.0" prefWidth="579.0">
+         <children>
+            <Button layoutX="249.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Corporate User" />
+            <Button layoutX="462.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Organiser" />
+            <Button layoutX="40.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Regular User" />
+            <Label layoutX="243.0" layoutY="14.0" prefHeight="25.0" prefWidth="94.0" text="Registration">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="27.0" prefHeight="25.0" prefWidth="169.0" text="Select an account type to register below">
+               <font>
+                  <Font name="Century Gothic" size="8.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
