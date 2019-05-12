@@ -1,5 +1,6 @@
 package Home;
 
+import Home.Models.DatabaseUtility;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,16 +13,22 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("fxml/Application.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Views/registrationPages.fxml"));
         primaryStage.setTitle("Global Music");
         primaryStage.setScene(new Scene(root, 800, 600));
+
+
+
         primaryStage.show();
-
-Boolean g = true;
-
     }
 
     public static void main(String[] args) {
+        try {
+            DatabaseUtility.getInstance().connect();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         launch(args);
 
 

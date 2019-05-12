@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Controllers.Registration">
+   <children>
+      <Pane fx:id="pnl_Corporate" layoutY="-1.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="318.0" layoutY="46.0" prefHeight="37.0" prefWidth="113.0" text="Register">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="507.0" layoutY="46.0" prefHeight="37.0" prefWidth="243.0" text="Corporate">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField layoutX="122.0" layoutY="346.0" prefHeight="26.0" prefWidth="174.0" promptText="Postcode" />
+            <TextField layoutX="96.0" layoutY="76.0" prefHeight="26.0" prefWidth="174.0" promptText="First Name*" />
+            <TextField layoutX="54.0" layoutY="464.0" prefHeight="26.0" prefWidth="174.0" promptText="Phone Number" />
+            <TextField layoutX="89.0" layoutY="372.0" prefHeight="26.0" prefWidth="174.0" promptText="Town" />
+            <TextField layoutX="69.0" layoutY="121.0" prefHeight="26.0" prefWidth="174.0" promptText="Last Name" />
+            <TextField layoutX="41.0" layoutY="186.0" prefHeight="26.0" prefWidth="174.0" promptText="1st line of Address" />
+            <TextField layoutX="41.0" layoutY="212.0" prefHeight="26.0" prefWidth="174.0" promptText="2nd Line of Address" />
+            <TextField layoutX="54.0" layoutY="300.0" prefHeight="26.0" prefWidth="174.0" promptText="Phone Number" />
+            <TextField layoutX="418.0" layoutY="383.0" prefHeight="26.0" prefWidth="242.0" promptText="Login email" />
+            <PasswordField layoutX="395.0" layoutY="465.0" prefHeight="26.0" prefWidth="242.0" promptText="password" />
+            <TextField layoutX="418.0" layoutY="428.0" prefHeight="26.0" prefWidth="242.0" promptText="Login email" />
+            <PasswordField layoutX="407.0" layoutY="517.0" prefHeight="26.0" prefWidth="242.0" promptText="password" />
+            <Pane layoutX="349.0" layoutY="212.0" prefHeight="161.0" prefWidth="358.0" style="-fx-background-color: #edf3ff;">
+               <children>
+                  <Label layoutX="49.0" layoutY="53.0" text="Card No." />
+                  <Label layoutX="50.0" layoutY="26.0" text="Card holder" />
+                  <Label layoutX="50.0" layoutY="80.0" text="exp date" />
+                  <Label layoutX="50.0" layoutY="107.0" text="cvc" />
+                  <TextField layoutX="179.0" layoutY="22.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField layoutX="179.0" layoutY="49.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField layoutX="179.0" layoutY="103.0" prefHeight="26.0" prefWidth="158.0" />
+               </children>
+            </Pane>
+            <TextField layoutX="390.0" layoutY="98.0" prefHeight="26.0" prefWidth="242.0" promptText="Corporate Contact Name" />
+            <TextField editable="false" layoutX="391.0" layoutY="128.0" prefHeight="26.0" prefWidth="242.0" promptText="Organisation Name " />
+            <TextField layoutX="390.0" layoutY="159.0" prefHeight="26.0" prefWidth="242.0" promptText="Web Address" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_RegPaths" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_Reg_Corporate" layoutX="350.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickRegisterCorporateUser" prefHeight="25.0" prefWidth="114.0" text="Corporate User" />
+            <Button fx:id="btn_Reg_Org" layoutX="582.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickRegisterOrganiserButton" prefHeight="25.0" prefWidth="84.0" text="Organiser" />
+            <Button fx:id="btn_Reg_Regular" layoutX="160.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickRegisterRegularUser" prefHeight="25.0" prefWidth="84.0" text="Regular User" />
+            <Label layoutX="353.0" layoutY="127.0" prefHeight="25.0" prefWidth="94.0" text="Registration">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="298.0" layoutY="152.0" prefHeight="25.0" prefWidth="204.0" text="Select an account type to register below">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_RegOrg" layoutY="-1.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="318.0" layoutY="46.0" prefHeight="37.0" prefWidth="113.0" text="Register">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="507.0" layoutY="46.0" prefHeight="37.0" prefWidth="243.0" text="Organiser">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_RegularUser_Postcode" layoutX="122.0" layoutY="346.0" prefHeight="26.0" prefWidth="174.0" promptText="Postcode" />
+            <TextField fx:id="txt_RegularUser_firstName" layoutX="44.0" layoutY="76.0" prefHeight="26.0" prefWidth="174.0" promptText="First Name*" />
+            <TextField fx:id="txt_RegularUser_MobileNumber" layoutX="54.0" layoutY="464.0" prefHeight="26.0" prefWidth="174.0" promptText="Mobile Phone Number" />
+            <TextField fx:id="txt_RegularUser_Town" layoutX="89.0" layoutY="372.0" prefHeight="26.0" prefWidth="174.0" promptText="Town" />
+            <TextField fx:id="txt_RegularUser_LastName" layoutX="43.0" layoutY="121.0" prefHeight="26.0" prefWidth="174.0" promptText="Last Name" />
+            <TextField fx:id="txt_RegularUser_AddressLine1" layoutX="41.0" layoutY="186.0" prefHeight="26.0" prefWidth="174.0" promptText="1st line of Address" />
+            <TextField fx:id="txt_RegularUser_AddressLine2" layoutX="41.0" layoutY="212.0" prefHeight="26.0" prefWidth="174.0" promptText="2nd Line of Address" />
+            <TextField fx:id="txt_RegularUser_HomePhone" layoutX="54.0" layoutY="300.0" prefHeight="26.0" prefWidth="174.0" promptText="Phone Number" />
+            <TextField fx:id="txt_RegularUser_Email" layoutX="418.0" layoutY="383.0" prefHeight="26.0" prefWidth="242.0" promptText="Login email" />
+            <PasswordField fx:id="txt_RegularUser_Password" layoutX="395.0" layoutY="465.0" prefHeight="26.0" prefWidth="242.0" promptText="password" />
+            <Button fx:id="btn_RegularUser_Register" layoutX="634.0" layoutY="528.0" mnemonicParsing="false" onAction="#RegisterRegularUser" text="Register" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_Regular" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="318.0" layoutY="46.0" prefHeight="37.0" prefWidth="113.0" text="Register">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="507.0" layoutY="46.0" prefHeight="37.0" prefWidth="243.0" text="General Public">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_RegularUser_Postcode" layoutX="69.0" layoutY="287.0" prefHeight="26.0" prefWidth="174.0" promptText="Postcode" />
+            <TextField fx:id="txt_RegularUser_firstName" layoutX="69.0" layoutY="100.0" prefHeight="26.0" prefWidth="174.0" promptText="First Name*" />
+            <TextField fx:id="txt_RegularUser_MobileNumber" layoutX="69.0" layoutY="396.0" prefHeight="26.0" prefWidth="174.0" promptText="Mobile Number" />
+            <TextField fx:id="txt_RegularUser_Town" layoutX="69.0" layoutY="329.0" prefHeight="26.0" prefWidth="174.0" promptText="Town" />
+            <TextField fx:id="txt_RegularUser_LastName" layoutX="69.0" layoutY="139.0" prefHeight="26.0" prefWidth="174.0" promptText="Last Name" />
+            <TextField fx:id="txt_RegularUser_AddressLine1" layoutX="69.0" layoutY="176.0" prefHeight="26.0" prefWidth="174.0" promptText="1st line of Address" />
+            <TextField layoutX="69.0" layoutY="212.0" prefHeight="26.0" prefWidth="174.0" promptText="2nd Line of Address" fx:id="xt_RegularUser_AddressLine2" />
+            <TextField fx:id="txt_RegularUser_HomePhone" layoutX="69.0" layoutY="247.0" prefHeight="26.0" prefWidth="174.0" promptText="Home Phone Number" />
+            <TextField fx:id="txt_RegularUser_Email" layoutX="69.0" layoutY="475.0" prefHeight="26.0" prefWidth="242.0" promptText="Login email" />
+            <PasswordField fx:id="txt_RegularUser_Password" layoutX="69.0" layoutY="518.0" prefHeight="26.0" prefWidth="242.0" promptText="password" />
+            <ComboBox fx:id="ComboBox_Reg" layoutX="332.0" layoutY="101.0" prefWidth="150.0" promptText="Gender" />
+            <ComboBox layoutX="332.0" layoutY="153.0" prefWidth="150.0" promptText="Title" />
+            <TextField fx:id="txt_RegularUser_dob" layoutX="69.0" layoutY="441.0" prefHeight="26.0" prefWidth="174.0" promptText="Date of Birth (yyyy-MM-dd)" />
+            <TextField fx:id="txt_RegularUser_ContactName" layoutX="332.0" layoutY="287.0" prefHeight="26.0" prefWidth="242.0" promptText="Corporate Contact Name" />
+            <TextField fx:id="txt_RegularUser_OrganisationName" editable="false" layoutX="332.0" layoutY="247.0" prefHeight="26.0" prefWidth="242.0" promptText="Organisation Name " />
+            <TextField fx:id="txt_RegularUser_WebAddress" layoutX="332.0" layoutY="199.0" prefHeight="26.0" prefWidth="242.0" promptText="Web Address" />
+            <Pane layoutX="332.0" layoutY="327.0" prefHeight="161.0" prefWidth="358.0" style="-fx-background-color: #edf3ff;">
+               <children>
+                  <Label layoutX="49.0" layoutY="53.0" text="Card No." />
+                  <Label layoutX="50.0" layoutY="26.0" text="Card holder" />
+                  <Label layoutX="50.0" layoutY="80.0" text="exp date" />
+                  <Label layoutX="50.0" layoutY="107.0" text="cvc" />
+                  <TextField fx:id="txt_RegularUser_CardHolderName" layoutX="179.0" layoutY="22.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField fx:id="txt_RegularUser_CardNo" layoutX="179.0" layoutY="49.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField fx:id="txt_RegularUser_CardExpireDate" layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="158.0" />
+                  <TextField fx:id="txt_RegularUser_CardCvc" layoutX="179.0" layoutY="103.0" prefHeight="26.0" prefWidth="158.0" />
+               </children>
+            </Pane>
+            <Button layoutX="511.0" layoutY="532.0" mnemonicParsing="false" onAction="#RegisterRegularUser" text="Register User" />
+            <TextField fx:id="txt_RegularUser_County" layoutX="69.0" layoutY="363.0" prefHeight="26.0" prefWidth="174.0" promptText="Town" text="County" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_Login" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #565656; -fx-background-color:#565656 ;">
+         <children>
+            <PasswordField fx:id="txtbox_Login_Password" alignment="TOP_CENTER" layoutX="254.0" layoutY="351.0" prefHeight="25.0" prefWidth="285.0" promptText="Password" />
+            <TextField fx:id="txtbox_Login_Username" alignment="CENTER" layoutX="255.0" layoutY="313.0" prefHeight="25.0" prefWidth="283.0" promptText="Username" />
+            <Button fx:id="btn_login" layoutX="254.0" layoutY="396.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="114.0" text="Log in" />
+            <Label layoutX="473.0" layoutY="377.0" prefHeight="17.0" prefWidth="72.0" text="No account?">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="326.0" layoutY="282.0" prefHeight="27.0" prefWidth="147.0" text="account login" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="180.0" text="GLOBAL MUSIC" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="41.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_Login_CreateAccount" layoutX="424.0" layoutY="396.0" mnemonicParsing="false" onAction="#ClickRegisterAccountBtn" prefHeight="25.0" prefWidth="114.0" text="Create Account" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
