@@ -89,7 +89,7 @@ public class Application implements Initializable {
     public void setAccountInformation(User user){
 
         txtF_EA_email.setText(user.getEmailAddress());
-
+       // https://www.youtube.com/watch?v=d6OOxLd1Ars
     }
 
    @FXML
