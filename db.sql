@@ -76,14 +76,14 @@ DROP TABLE IF EXISTS `FESTIVAL`;
 		
 CREATE TABLE `FESTIVAL` (
   `id` INTEGER NOT NULL AUTO_INCREMENT,
-  `location` VARCHAR(150) NOT NULL,
+  `city` VARCHAR(30) NOT NULL,
+  `postcode` VARCHAR(8) NULL DEFAULT NULL,
   `date` DATE NOT NULL,
   `festival_name` VARCHAR(50) NOT NULL,
   `venue` VARCHAR(25) NOT NULL,
   `description` VARCHAR(255) NULL DEFAULT NULL,
   `tickets_available` INTEGER NOT NULL DEFAULT 0,
   `line_up_id` INTEGER NOT NULL,
-  `genre` VARCHAR(50) NOT NULL,
   `ticket_price` DECIMAL NOT NULL DEFAULT 0.00,
   `event_type` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -150,6 +150,22 @@ CREATE TABLE `Invoice` (
   `user_id` INTEGER NULL DEFAULT NULL,
   `booking_id` INTEGER NULL DEFAULT NULL,
   `payment_id` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- ---
+-- Table 'AGENT'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `AGENT`;
+		
+CREATE TABLE `AGENT` (
+  `id` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `first_name` VARCHAR(25) NULL DEFAULT NULL,
+  `last_name` VARCHAR(25) NULL DEFAULT NULL,
+  `agent_email` VARCHAR(30) NOT NULL,
+  `agent_contract_no` BIGINT(11) NOT NULL,
   PRIMARY KEY (`id`)
 );
 

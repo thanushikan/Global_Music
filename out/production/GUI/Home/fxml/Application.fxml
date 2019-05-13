@@ -61,28 +61,6 @@
                   </Label>
                </children>
             </Pane>
-            <Pane fx:id="pnl_AddCF" layoutX="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #89f9bf;">
-               <children>
-                  <TextField layoutX="350.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Time" />
-                  <TextField layoutX="14.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent " />
-                  <TextField layoutX="30.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Venue" />
-                  <TextField layoutX="389.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Address line 2" />
-                  <TextField layoutX="210.0" layoutY="183.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Postcode" />
-                  <DatePicker layoutX="367.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Date" />
-                  <TextField layoutX="212.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Address line 1" />
-                  <TextField layoutX="30.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (VIP)" />
-                  <Button layoutX="437.0" layoutY="535.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
-                  <TextField layoutX="389.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Corporate)" />
-                  <TextField layoutX="210.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Standrd)" />
-                  <TextField layoutX="30.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="306.0" promptText="Festival Name" />
-                  <Button layoutX="517.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="+">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Button>
-                  <TextField layoutX="183.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Artist" />
-               </children>
-            </Pane>
             <Pane fx:id="pnl_EditAccount" layoutX="220.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #cad8f9;">
                <children>
                   <TextField fx:id="firstNameTExtField" editable="false" layoutX="48.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FirstName" />
@@ -268,6 +246,28 @@
                         <Font name="Consolas" size="35.0" />
                      </font>
                   </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_AddCF" layoutX="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #89f9bf;">
+               <children>
+                  <TextField layoutX="350.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Time" />
+                  <TextField layoutX="14.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent " />
+                  <TextField layoutX="30.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Venue" />
+                  <TextField layoutX="389.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Address line 2" />
+                  <TextField layoutX="210.0" layoutY="183.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Postcode" />
+                  <DatePicker fx:id="ACF_date" layoutX="367.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Date" />
+                  <TextField layoutX="212.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Address line 1" />
+                  <TextField layoutX="30.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (VIP)" />
+                  <Button layoutX="437.0" layoutY="535.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
+                  <TextField layoutX="389.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Corporate)" />
+                  <TextField layoutX="210.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Standrd)" />
+                  <TextField layoutX="30.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="306.0" promptText="Festival Name" />
+                  <Button layoutX="517.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField layoutX="183.0" layoutY="315.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Artist" />
                </children>
             </Pane>
          </children>
