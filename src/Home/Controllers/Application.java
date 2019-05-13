@@ -9,9 +9,8 @@ import Home.Models.User;
 import Home.Models.UserDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
 
@@ -25,6 +24,44 @@ public class Application implements Initializable {
 
     @FXML
     private TextField txtF_EA_firstName,txtF_EA_email;
+
+    //Pane Add Concerts / Festivals (Add CF)
+    @FXML
+    private TextField txtF_ACF_firstivalName,txtF_ACF_VIP,txtF_ACF_Standard,txtF_ACF_corporate,txtF_ACF_venue,txtF_ACF_city,txtF_ACF_postcode,txtF_ACF_tickets_available,txtF_ACF_event_type;
+
+    //Pane Add CF
+    @FXML
+    private TextArea txtF_ACF_description;
+
+    //Pane Add CF
+    @FXML
+    private DatePicker date_ACF;
+
+    //Line up tabs; Pane Add CF
+    @FXML
+    private Tab tab_ACF_line_up_1,tab_ACF_line_up_2,tab_ACF_line_up_3,tab_ACF_line_up_4;
+
+    //Save buttons for the line up tabs
+    @FXML
+    private Button txtF_ACF_Lineup_1_save,txtF_ACF_Lineup_2_save,txtF_ACF_Lineup_3_save,txtF_ACF_Lineup_4_save;
+
+    //Tab : line up 1 text fields
+    @FXML
+    private TextField txtF_ACF_Lineup_1_performanceName,txtF_ACF_Lineup_1_time,txtF_ACF_Lineup_1_agentEmail,txtF_ACF_Lineup_1_agentFirstName,txtF_ACF_Lineup_1_agentLastName,txtF_ACF_Lineup_1_agentNo,txtF_ACF_Lineup_1_Artist_1_FirstName,txtF_ACF_Lineup_1_Artist_1_lastName,txtF_ACF_Lineup_1_Artist_2_FirstName,txtF_ACF_Lineup_1_Artist_2_lastName,txtF_ACF_Lineup_1_Artist_3_FirstName,txtF_ACF_Lineup_1_Artist_3_lastName,txtF_ACF_Lineup_1_Artist_4_FirstName,txtF_ACF_Lineup_1_Artist_4_lastName,txtF_ACF_Lineup_1_Artist_5_FirstName,txtF_ACF_Lineup_1_Artist_5_lastName;
+
+    //Tab : line up 2 text fields
+    @FXML
+    private TextField txtF_ACF_Lineup_2_performanceName,txtF_ACF_Lineup_2_time,txtF_ACF_Lineup_2_agentEmail,txtF_ACF_Lineup_2_agentFirstName,txtF_ACF_Lineup_2_agentLastName,txtF_ACF_Lineup_2_agentNo,txtF_ACF_Lineup_2_Artist_1_FirstName,txtF_ACF_Lineup_2_Artist_1_lastName,txtF_ACF_Lineup_2_Artist_2_FirstName,txtF_ACF_Lineup_2_Artist_2_lastName,txtF_ACF_Lineup_2_Artist_3_FirstName,txtF_ACF_Lineup_2_Artist_3_lastName,txtF_ACF_Lineup_2_Artist_4_FirstName,txtF_ACF_Lineup_2_Artist_4_lastName,txtF_ACF_Lineup_2_Artist_5_FirstName,txtF_ACF_Lineup_2_Artist_5_lastName;
+
+    //Tab : line up 3 text fields
+    @FXML
+    private TextField txtF_ACF_Lineup_3_performanceName,txtF_ACF_Lineup_3_time,txtF_ACF_Lineup_3_agentEmail,txtF_ACF_Lineup_3_agentFirstName,txtF_ACF_Lineup_3_agentLastName,txtF_ACF_Lineup_3_agentNo,txtF_ACF_Lineup_3_Artist_1_FirstName,txtF_ACF_Lineup_3_Artist_1_lastName,txtF_ACF_Lineup_3_Artist_2_FirstName,txtF_ACF_Lineup_3_Artist_2_lastName,txtF_ACF_Lineup_3_Artist_3_FirstName,txtF_ACF_Lineup_3_Artist_3_lastName,txtF_ACF_Lineup_3_Artist_4_FirstName,txtF_ACF_Lineup_3_Artist_4_lastName,txtF_ACF_Lineup_3_Artist_5_FirstName,txtF_ACF_Lineup_3_Artist_5_lastName;
+
+    //Tab : line up 4 text fields
+    @FXML
+    private TextField txtF_ACF_Lineup_4_performanceName,txtF_ACF_Lineup_4_time,txtF_ACF_Lineup_4_agentEmail,txtF_ACF_Lineup_4_agentFirstName,txtF_ACF_Lineup_4_agentLastName,txtF_ACF_Lineup_4_agentNo,txtF_ACF_Lineup_4_Artist_1_FirstName,txtF_ACF_Lineup_3_Artist_1_lastName1,txtF_ACF_Lineup_4_Artist_2_FirstName,txtF_ACF_Lineup_4_Artist_2_lastName,txtF_ACF_Lineup_3_Artist_3_FirstName1,txtF_ACF_Lineup_4_Artist_3_lastName,txtF_ACF_Lineup_4_Artist_4_FirstName,txtF_ACF_Lineup_4_Artist_4_lastName,txtF_ACF_Lineup_4_Artist_5_FirstName,txtF_ACF_Lineup_4_Artist_5_lastName;
+
+
 
     @FXML
     private List<Button> button;
@@ -47,6 +84,19 @@ public class Application implements Initializable {
     }
 
     public UserDAO userDAO;
+
+
+
+
+
+
+
+
+
+
+
+
+
     @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btn_Account) {

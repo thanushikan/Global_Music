@@ -147,7 +147,7 @@
                         <Label fx:id="lbl_Address_Line_21" layoutX="17.0" layoutY="121.0" text="Postcode" />
                      </children>
                   </Pane>
-                  <TableView layoutY="100.0" prefHeight="502.0" prefWidth="284.0">
+                  <TableView layoutY="98.0" prefHeight="502.0" prefWidth="284.0">
                      <columns>
                         <TableColumn prefWidth="75.0" text="Date" />
                         <TableColumn prefWidth="75.0" text="Venue " />
@@ -270,53 +270,143 @@
             </Pane>
             <Pane fx:id="pnl_AddCF" layoutX="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #89f9bf;">
                <children>
-                  <TextField fx:id="txtF_ACF_venue" layoutX="30.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Venue" />
-                  <TextField fx:id="txtF_ACF_city" layoutX="208.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="City" />
-                  <TextField fx:id="txtF_ACF_postcode" layoutX="390.0" layoutY="140.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Postcode" />
-                  <DatePicker layoutX="367.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Date" />
-                  <TextField fx:id="txtF_ACF_VIP" layoutX="30.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (VIP)" />
-                  <Button layoutX="446.0" layoutY="288.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
-                  <TextField fx:id="txtF_ACF_corporate" layoutX="389.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Corporate)" />
-                  <TextField fx:id="txtF_ACF_Standard" layoutX="210.0" layoutY="96.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Standrd)" />
-                  <TextField fx:id="txtF_ACF_firstivalName" layoutX="30.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="306.0" promptText="Festival Name" />
-                  <TabPane layoutX="9.0" layoutY="360.0" prefHeight="183.0" prefWidth="562.0" style="-fx-background-color: #b9f7e8;" tabClosingPolicy="UNAVAILABLE">
+                  <TextField fx:id="txtF_ACF_venue" layoutX="30.0" layoutY="83.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Venue" />
+                  <TextField fx:id="txtF_ACF_city" layoutX="211.0" layoutY="82.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="City" />
+                  <TextField fx:id="txtF_ACF_postcode" layoutX="390.0" layoutY="83.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Postcode" />
+                  <DatePicker fx:id="date_ACF" layoutX="367.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Date" />
+                  <TextField fx:id="txtF_ACF_VIP" layoutX="30.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (VIP)" />
+                  <TextField fx:id="txtF_ACF_corporate" layoutX="389.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Corporate)" />
+                  <TextField fx:id="txtF_ACF_Standard" layoutX="210.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Ticket Price (Standard)" />
+                  <TextField fx:id="txtF_ACF_firstivalName" layoutX="30.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="306.0" promptText="Festival Name" />
+                  <TabPane layoutY="246.0" prefHeight="322.0" prefWidth="580.0" style="-fx-background-color: #b9f7e8;" tabClosingPolicy="UNAVAILABLE">
                      <tabs>
-                        <Tab text="Line up 1">
+                        <Tab fx:id="tab_ACF_line_up_1" text="Line up 1">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="562.0">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="562.0">
                                  <children>
-                                    <TextField fx:id="txtF_ACF_L2_agentFN" layoutX="81.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
-                                    <TextField fx:id="txtF_ACF_L2_artistFN" layoutX="78.0" layoutY="72.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
-                                    <TextField fx:id="txtF_ACF_L2_time" layoutX="110.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Time" />
-                                    <TextField fx:id="txtF_ACF_L2_agentLN" layoutX="287.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
-                                    <TextField fx:id="txtF_ACF_L2_artistLN" layoutX="286.0" layoutY="72.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
-                                    <Label layoutX="22.0" layoutY="25.0" prefHeight="18.0" prefWidth="63.0" text="Agent" />
-                                    <Label layoutX="20.0" layoutY="75.0" prefHeight="18.0" prefWidth="63.0" text="Artist" />
-                                    <Button fx:id="txtF_ACF_L2_save" layoutX="424.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_agentFirstName" layoutX="20.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_1_FirstName" layoutX="19.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_time" layoutX="192.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Time" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_1_lastName" layoutX="19.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="35.0" layoutY="49.0" prefHeight="18.0" prefWidth="63.0" />
+                                    <Button fx:id="txtF_ACF_Lineup_1_save" layoutX="443.0" layoutY="239.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_performanceName" layoutX="20.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_2_FirstName" layoutX="202.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_2_lastName" layoutX="202.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="203.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 2" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_3_FirstName" layoutX="395.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_3_lastName" layoutX="395.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="397.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 3" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_4_FirstName" layoutX="20.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_4_lastName" layoutX="20.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="22.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 4" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_5_FirstName" layoutX="207.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_Artist_5_lastName" layoutX="207.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="208.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 5" />
+                                    <Label layoutX="20.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 1" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_agentLastName" layoutX="192.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Last Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_agentEmail" layoutX="364.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Email" />
+                                    <TextField fx:id="txtF_ACF_Lineup_1_agentNo" layoutX="364.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Conatct Number" />
                                  </children>
                               </AnchorPane>
                            </content>
                         </Tab>
-                        <Tab text="Line up 2">
+                        <Tab fx:id="tab_ACF_line_up_2" text="Line up 2">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="562.0">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="562.0">
                                  <children>
-                                    <TextField fx:id="txtF_ACF_L1_agentFN1" layoutX="81.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
-                                    <TextField fx:id="txtF_ACF_L1_artistFN1" layoutX="78.0" layoutY="72.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
-                                    <TextField fx:id="txtF_ACF_L1_time1" layoutX="110.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Time" />
-                                    <TextField fx:id="txtF_ACF_L1_agentLN1" layoutX="287.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
-                                    <TextField fx:id="txtF_ACF_L1_artistLN1" layoutX="286.0" layoutY="72.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
-                                    <Label layoutX="22.0" layoutY="25.0" prefHeight="18.0" prefWidth="63.0" text="Agent" />
-                                    <Label layoutX="20.0" layoutY="75.0" prefHeight="18.0" prefWidth="63.0" text="Artist" />
-                                    <Button fx:id="txtF_ACF_L1_save1" layoutX="424.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_agentFirstName" layoutX="20.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_1_FirstName" layoutX="19.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_time" layoutX="192.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Time" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_1_lastName" layoutX="19.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Button fx:id="txtF_ACF_Lineup_2_save" layoutX="443.0" layoutY="239.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_performanceName" layoutX="20.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_2_FirstName" layoutX="202.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_2_lastName" layoutX="202.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="218.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 2" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_3_FirstName" layoutX="395.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_3_lastName" layoutX="395.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="411.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 3" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_4_FirstName" layoutX="20.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_4_lastName" layoutX="20.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="36.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 4" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_5_FirstName" layoutX="211.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_Artist_5_lastName" layoutX="211.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="227.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 5" />
+                                    <Label layoutX="40.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 1" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_agentLastName" layoutX="192.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Last Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_agentEmail" layoutX="364.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Email" />
+                                    <TextField fx:id="txtF_ACF_Lineup_2_agentNo" layoutX="364.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Conatct Number" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tab_ACF_line_up_3" text="Line up 3">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="562.0">
+                                 <children>
+                                    <TextField fx:id="txtF_ACF_Lineup_3_agentFirstName" layoutX="20.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_1_FirstName" layoutX="19.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_time" layoutX="192.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Time" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_1_lastName" layoutX="19.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Button fx:id="txtF_ACF_Lineup_3_save" layoutX="443.0" layoutY="239.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_performanceName" layoutX="20.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_2_FirstName" layoutX="202.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_2_lastName" layoutX="202.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="218.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 2" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_3_FirstName" layoutX="395.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_3_lastName" layoutX="395.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="411.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 3" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_4_FirstName" layoutX="20.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_4_lastName" layoutX="20.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="36.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 4" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_5_FirstName" layoutX="211.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_5_lastName" layoutX="211.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="227.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 5" />
+                                    <Label layoutX="40.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 1" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_agentLastName" layoutX="192.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Last Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_agentEmail" layoutX="364.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Email" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_agentNo" layoutX="364.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Conatct Number" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tab_ACF_line_up_4" text="Line up 3">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="562.0">
+                                 <children>
+                                    <TextField fx:id="txtF_ACF_Lineup_4_agentFirstName" layoutX="20.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_1_FirstName" layoutX="19.0" layoutY="113.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_time" layoutX="192.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Time" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_1_lastName1" layoutX="19.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Button fx:id="txtF_ACF_Lineup_4_save" layoutX="443.0" layoutY="239.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Save" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_performanceName" layoutX="20.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Performance Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_2_FirstName" layoutX="202.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_2_lastName" layoutX="202.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="218.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 2" />
+                                    <TextField fx:id="txtF_ACF_Lineup_3_Artist_3_FirstName1" layoutX="395.0" layoutY="114.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_3_lastName" layoutX="395.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="411.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 3" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_4_FirstName" layoutX="20.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_4_lastName" layoutX="20.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="36.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 4" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_5_FirstName1" layoutX="211.0" layoutY="218.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="First Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_Artist_5_lastName" layoutX="211.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Last Name" />
+                                    <Label layoutX="227.0" layoutY="191.0" prefHeight="18.0" prefWidth="63.0" text="Artist 5" />
+                                    <Label layoutX="40.0" layoutY="87.0" prefHeight="18.0" prefWidth="63.0" text="Artist 1" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_agentLastName" layoutX="192.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Last Name" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_agentEmail" layoutX="364.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Email" />
+                                    <TextField fx:id="txtF_ACF_Lineup_4_agentNo" layoutX="364.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Agent Conatct Number" />
                                  </children>
                               </AnchorPane>
                            </content>
                         </Tab>
                      </tabs>
                   </TabPane>
-                  <TextArea fx:id="txtF_ACF_description" layoutX="30.0" layoutY="187.0" prefHeight="80.0" prefWidth="519.0" />
-                  <Button layoutX="460.0" layoutY="553.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
+                  <TextArea fx:id="txtF_ACF_description" layoutX="31.0" layoutY="159.0" prefHeight="80.0" prefWidth="519.0" />
+                  <Button layoutX="479.0" layoutY="572.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Save &amp; Publish" />
+                  <TextField fx:id="txtF_ACF_tickets_available" layoutX="30.0" layoutY="117.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Number of tickets available " />
+                  <TextField fx:id="txtF_ACF_event_type" layoutX="390.0" layoutY="117.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" promptText="Event Type" />
                </children>
             </Pane>
          </children>
