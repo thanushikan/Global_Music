@@ -47,8 +47,8 @@ public class Agent {
     public BigInteger getAgent_contact_no() {
         return agent_contact_no;
     }
-    public void setAgent_contact_no(BigInteger agent_contact_no) {
-        this.agent_contact_no = agent_contact_no;
+    public void setAgent_contact_no(String agent_contact_no) {
+        this.agent_contact_no = new BigInteger(agent_contact_no);
     }
 
 

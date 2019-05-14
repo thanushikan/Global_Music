@@ -47,6 +47,7 @@ DROP TABLE IF EXISTS `TICKET`;
 CREATE TABLE `TICKET` (
   `id` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `booking_id` INTEGER NOT NULL,
+  `tickct_type` varchar(11) NOT NULL ,
   PRIMARY KEY (`id`)
 );
 
@@ -215,9 +216,11 @@ ALTER TABLE `user` ADD UNIQUE(`email_address`);
 -- ('','','');
 -- INSERT INTO `LINEUP` (`id`,`performance_time`,`artist`) VALUES
 -- ('','','');
--- INSERT INTO `TICKET` (`id`,`ticket_no`,`booking_id`) VALUES
+-- INSERT INTO `TICKET` (`id`,`booking_id`,`ticket_type`) VALUES
 -- ('','','');
--- INSERT INTO `Artist` (`id`,`first_name`,`last_name`,`Agent `) VALUES
+-- INSERT INTO `Artist` (`id`,`first_name`,`last_name`,`agent_ id`) VALUES
 -- ('','','','');
+-- INSERT INTO `AGENT` (`id`,`first_name`,`last_name`,agent_contract_no`,`agent_email`) VALUES
+-- ('','','','','');
 -- INSERT INTO `Invoice` (`id`,`user_id`,`booking_id`,`payment_id`) VALUES
 -- ('','','','');

@@ -50,12 +50,9 @@ public class FestivalDAO {
     }
 
 
-    public Festival getFestival(String email) throws SQLException{
-        User user.
-        Festival festival = null;
+    public void  getFestival(){
 
-        PreparedStatement preparedStatement = DatabaseUtility.getInstance().getConnection().prepareStatement("SELECT * FROM `user` WHERE `email_address` = ?;");
-    }
+            }
 
 
  public void updateFestival(){
