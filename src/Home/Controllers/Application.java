@@ -3,8 +3,12 @@ package Home.Controllers;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+import Home.Models.Festival;
+import Home.Models.FestivalDAO;
 import Home.Models.User;
 import Home.Models.UserDAO;
 import javafx.fxml.FXML;
@@ -29,7 +33,7 @@ public class Application implements Initializable {
 
     //Pane Add Concerts / Festivals (Add CF)
     @FXML
-    private TextField txtF_ACF_firstivalName, txtF_ACF_VIP, txtF_ACF_Standard, txtF_ACF_corporate, txtF_ACF_venue, txtF_ACF_city, txtF_ACF_postcode, txtF_ACF_tickets_available, txtF_ACF_event_type;
+    private TextField txtF_ACF_festivalName, txtF_ACF_VIP, txtF_ACF_Standard, txtF_ACF_corporate, txtF_ACF_venue, txtF_ACF_city, txtF_ACF_postcode, txtF_ACF_tickets_available, txtF_ACF_event_type;
 
     //Pane Add CF
     @FXML
@@ -45,7 +49,7 @@ public class Application implements Initializable {
 
     //Save buttons for the line up tabs
     @FXML
-    private Button txtF_ACF_Lineup_1_save, txtF_ACF_Lineup_2_save, txtF_ACF_Lineup_3_save, txtF_ACF_Lineup_4_save;
+    private Button btn_ACF_saveSQL,btn_ACF_Lineup_1_save, btn_ACF_Lineup_2_save, btn_ACF_Lineup_3_save, brn_ACF_Lineup_4_save;
 
     //Tab : line up 1 text fields
     @FXML
@@ -66,6 +70,9 @@ public class Application implements Initializable {
     private User currentUser;
 
     public UserDAO userDAO;
+
+    private Festival currentFestival;
+    public FestivalDAO festivalDAO;
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -97,6 +104,8 @@ public class Application implements Initializable {
 
         }
     }
+
+    ////////////////////////////My Account////////////////////////////////////////////////////////////////////////////////////
 
     public void setAccountInformation(User user) {
         currentUser = user;
@@ -188,6 +197,58 @@ public class Application implements Initializable {
             e.printStackTrace();
         }
     }
+
+    //////////////////////////ADD Festicval///////////////////////////////////////////////////////////////////////
+
+    public void setFestivalDetails(Festival festival) {
+        currentFestival = festival;
+
+        txtF_ACF_festivalName.setText(festival.getFestival_name());
+        txtF_ACF_venue.setText(festival.getVenue());
+        txtF_ACF_city.setText(festival.getCity());
+        txtF_ACF_postcode.setText(festival.getPostcode());
+        //txtF_ACF_VIP.setText(festival.getTicket_price());
+        txtF_ACF_corporate.setText(festival.getTicket_price());
+        // txtF_ACF_Standard.setText(festival.getTicket_price());
+        txtF_ACF_tickets_available.setText(festival.getTickets_available());
+        txtF_ACF_event_type.setText(festival.getEvent_type());
+        txtF_ACF_description.setText(festival.getDescription());
+        date_ACF.setValue(LocalDate.parse(festival.getDate(true)));
+
+        // date_ACF.setAccessibleText(festival.getDate(true));
+        //String date1 = date_ACF.format(DateTimeFormatter.ofPattern("dd/mm/yyyyy"));
+    }
+
+        public void saveAddFestivalButton (){
+
+            Festival festival = new Festival();
+            currentFestival = festival;
+
+
+            festival.setFestival_name(txtF_ACF_festivalName.getText());
+            festival.setVenue(txtF_ACF_venue.getText());
+            festival.setCity(txtF_ACF_city.getText());
+            festival.setPostcode(txtF_ACF_postcode.getText());
+            //festival.setTicket_price(txtF_ACF_corporate.getText());
+            //festival.setTicket_price(txtF_ACF_VIP.getText());
+            festival.setTicket_price(txtF_ACF_Standard.getText());
+            festival.setTickets_available(txtF_ACF_tickets_available.getText());
+            festival.setEvent_type(txtF_ACF_event_type.getText());
+            festival.setDescription(txtF_ACF_description.getText());
+            //festival.setDate(false,date_ACF.getAccessibleText());
+        festival.setDate(false,date_ACF.getValue().toString());
+
+
+            //String date1 = date_ACF.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+            new FestivalDAO().addFestival(festival);
+
+
+        }
+
+
+
+
 
     @FXML
     public void initialize(URL url, ResourceBundle rb) {

@@ -4,6 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 
 import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Festival {
 
@@ -47,15 +50,69 @@ public class Festival {
     }
     public void setPostcode(String postcode){this.postcode = postcode;}
 
-    public String getDate(){
-        return date;
-    }
-    public void setDate(String date) {
-        this.date = date;
+
+   public String getDate(boolean ukformat) {
+        System.out.print(this.date);
+        if (ukformat){
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd/MM/yyyy");
+            Date ndate= null;
+            try {
+                ndate = format1.parse(this.date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            return format2.format(ndate);
+        }
+        else{
+            return this.date;
+        }
+
     }
 
+
+
+    public void setDate(boolean ukformat, String date){
+        if (ukformat){
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd/MM/yyyy");
+            Date ndate= null;
+            try {
+                ndate = format1.parse(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            this.date = format2.format(ndate);
+            System.out.print(this.date);
+        }
+        else{
+            if (!date.contains("-")){
+                SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
+                SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd");
+                Date ndate= null;
+                try {
+                    ndate = format1.parse(date);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+
+                this.date= format2.format(ndate);
+                System.out.print(this.date);
+            }
+            else{
+                this.date = date;
+            }
+
+        }
+    }
+
+   /* public String getDate(){return date;}
+    public void setDate(String date){this.date = date;}
+    */
     public String getFestival_name(){
-        return festival_name;
+    return festival_name;
     }
     public void setFestival_name(String festival_name) {
         this.festival_name = festival_name;

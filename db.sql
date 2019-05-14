@@ -207,7 +207,7 @@ ALTER TABLE `user` ADD UNIQUE(`email_address`);
 
 -- INSERT INTO `BOOKING` (`id`,`number_of_tickets`,`payment_id`,`festival_id`,`user_id`) VALUES
 -- ('','','','','');
--- INSERT INTO `FESTIVAL` (`id`,`location`,`date`,`festival_name`,`venue`,`description`,`tickets_available`,`line_up_id`,`genre`,`ticket_price`,`event_type`) VALUES
+-- INSERT INTO `FESTIVAL` (`id`,`date`,`festival_name`,`venue`,`city`,postcode`,`description`,`tickets_available`,`line_up_id`,`ticket_price`,`event_type`)" + VALUES
 -- ('','','','','','','','','','','');
 -- INSERT INTO `USER` (`id`,`first_name`,`last_name`,`gender`,`address_line`,`address_line2`,`town`,`county`,`postcode`,`dob`,`contact_name`,`organisation_name`,`email_address`,`phone_no`,`mobile_no`,`web_address`,`password`,`is_corporate`,`is_admin`,`title`) VALUES
 -- ('','','','','','','','','','','','','','','','','','','','');
