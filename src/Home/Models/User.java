@@ -2,8 +2,11 @@ package Home.Models;
 
 import java.math.BigInteger;
 
+import java.text.DateFormat;
+import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class User {
@@ -38,7 +41,8 @@ public class User {
                 String postcode,String dob,String contactName,String organisationName,String emailAddress,BigInteger phoneNumber,BigInteger mobileNumber,
                 String webAddress, String password,Boolean isCorporate,Boolean isAdmin,Boolean isOrganiser) {
                 this.title = title; this.firstName=firstName; this.lastName=lastName; this.gender = gender; this.addressLine1 =addressLine1;
-                this.addressLine2 = addressLine2; this.town = town; this.county =county; this.postcode = postcode; this.dob=dob; this.contactName=contactName;
+                this.addressLine2 = addressLine2; this.town = town; this.county =county; this.postcode = postcode;
+                this.setDOB(false,dob);this.contactName=contactName;
                 this.organisationName=organisationName; this.emailAddress=emailAddress;this.phoneNumber=phoneNumber;this.mobileNumber=mobileNumber;this.webAddress=webAddress;
                 this.password=password; this.isCorporate=isCorporate;this.isAdmin=isAdmin;this.isOrganiser=isOrganiser;
     }
@@ -76,22 +80,69 @@ public class User {
     public void setPostcode(String postcode){this.postcode = postcode; }
     public String getPostcode() {return postcode;}
 
-    public void setDOB(String dob){
-     /*   SimpleDateFormat simpleDateFormat=  new SimpleDateFormat("yyyy-MM-dd");
-        System.out.print(simpleDateFormat);
-        System.out.print(dob);
+    public void setDOB(boolean ukformat,String dob){
+        if (ukformat){
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd/MM/yyyy");
+            Date date= null;
+            try {
+                date = format1.parse(dob);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
 
-        String strDOB = simpleDateFormat.format(dob);*/
-        this.dob=dob;
+            this.dob= format2.format(date);
+            System.out.print(this.dob);
+        }
+        else{
+            if (!dob.contains("-")){
+                SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
+                SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd");
+                Date date= null;
+                try {
+                    date = format1.parse(dob);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+
+                this.dob= format2.format(date);
+                System.out.print(this.dob);
+               }
+            else{
+                this.dob = dob;
+            }
+
+        }
+
     }
 
-    public String getDOB(){return this.dob;}
+    public String getDOB(boolean ukformat){
+        System.out.print(this.dob);
+        if (ukformat){
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd/MM/yyyy");
+            Date date= null;
+            try {
+                date = format1.parse(this.dob);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            return format2.format(date);
+        }
+        else{
+            return this.dob;
+        }
+      }
+
     public void setContactName(String contactName){this.contactName = contactName; }
     public String getContactName() {return contactName;}
     public void setOrganisationName(String organisationName){this.organisationName = organisationName; }
     public String getOrganisationName() {return organisationName;}
     public void setEmailAddress(String emailAddress){this.emailAddress = emailAddress; }
-    public String getEmailAddress() {return this.emailAddress;}
+    public String getEmailAddress() {
+        System.out.println(this.emailAddress);
+        return this.emailAddress;}
     public void setPhoneNumber(String phoneNumber){this.phoneNumber = new BigInteger(phoneNumber); }
     public String getPhoneNumber() {return this.phoneNumber.toString();}
     public void setMobileNumber(String mobileNumber){this.mobileNumber = new BigInteger(mobileNumber); }
