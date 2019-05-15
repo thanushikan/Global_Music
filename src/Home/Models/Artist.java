@@ -5,6 +5,7 @@ public class Artist {
     private int id;
     private String first_name;
     private String last_name;
+    private String agent_id;
 
 
     public Artist(){
@@ -33,6 +34,12 @@ public class Artist {
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
+
+    public String getAgent_id(){return agent_id;}
+    public void setAgent_id(String agent_id){
+        this.agent_id = agent_id;
+    }
+
 
 
 }

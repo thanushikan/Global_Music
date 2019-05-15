@@ -7,10 +7,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import Home.Models.Festival;
-import Home.Models.FestivalDAO;
-import Home.Models.User;
-import Home.Models.UserDAO;
+import Home.Models.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -65,7 +62,7 @@ public class Application implements Initializable {
 
     //Tab : line up 4 text fields
     @FXML
-    private TextField txtF_ACF_Lineup_4_performanceName, txtF_ACF_Lineup_4_time, txtF_ACF_Lineup_4_agentEmail, txtF_ACF_Lineup_4_agentFirstName, txtF_ACF_Lineup_4_agentLastName, txtF_ACF_Lineup_4_agentNo, txtF_ACF_Lineup_4_Artist_1_FirstName, txtF_ACF_Lineup_3_Artist_1_lastName1, txtF_ACF_Lineup_4_Artist_2_FirstName, txtF_ACF_Lineup_4_Artist_2_lastName, txtF_ACF_Lineup_3_Artist_3_FirstName1, txtF_ACF_Lineup_4_Artist_3_lastName, txtF_ACF_Lineup_4_Artist_4_FirstName, txtF_ACF_Lineup_4_Artist_4_lastName, txtF_ACF_Lineup_4_Artist_5_FirstName, txtF_ACF_Lineup_4_Artist_5_lastName;
+    private TextField txtF_ACF_Lineup_4_performanceName, txtF_ACF_Lineup_4_time, txtF_ACF_Lineup_4_agentEmail, txtF_ACF_Lineup_4_agentFirstName, txtF_ACF_Lineup_4_agentLastName, txtF_ACF_Lineup_4_agentNo, txtF_ACF_Lineup_4_Artist_1_FirstName, txtF_ACF_Lineup_4_Artist_1_lastName, txtF_ACF_Lineup_4_Artist_2_FirstName, txtF_ACF_Lineup_4_Artist_2_lastName, txtF_ACF_Lineup_4_Artist_3_FirstName, txtF_ACF_Lineup_4_Artist_3_lastName, txtF_ACF_Lineup_4_Artist_4_FirstName, txtF_ACF_Lineup_4_Artist_4_lastName, txtF_ACF_Lineup_4_Artist_5_FirstName, txtF_ACF_Lineup_4_Artist_5_lastName;
 
     private User currentUser;
 
@@ -74,6 +71,14 @@ public class Application implements Initializable {
     private Festival currentFestival;
     public FestivalDAO festivalDAO;
 
+    private Artist currentArtist;
+    public ArtistDAO artistDAO;
+
+    private Agent currentAgent;
+    public AgentDAO agentDAO;
+
+    private LineUp currentLineUp;
+    public LineUpDAO lineUpDAO;
     @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btn_Account) {
@@ -245,7 +250,238 @@ public class Application implements Initializable {
 
 
         }
+    public void setArtistDeatits(Artist artist){
+        currentArtist = artist;
+        ///line up 1
+        txtF_ACF_Lineup_1_Artist_1_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_1_Artist_1_lastName.setText(artist.getLast_name());
 
+        txtF_ACF_Lineup_1_Artist_2_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_1_Artist_2_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_1_Artist_3_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_1_Artist_3_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_1_Artist_4_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_1_Artist_4_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_1_Artist_5_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_1_Artist_5_lastName.setText(artist.getLast_name());
+
+        /////line up 2
+        txtF_ACF_Lineup_2_Artist_1_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_2_Artist_1_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_2_Artist_2_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_2_Artist_2_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_2_Artist_3_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_2_Artist_3_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_2_Artist_4_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_2_Artist_4_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_2_Artist_5_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_2_Artist_5_lastName.setText(artist.getLast_name());
+
+        ///line up 3
+        txtF_ACF_Lineup_3_Artist_1_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_3_Artist_1_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_3_Artist_2_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_3_Artist_2_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_3_Artist_3_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_3_Artist_3_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_3_Artist_4_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_3_Artist_4_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_3_Artist_5_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_3_Artist_5_lastName.setText(artist.getLast_name());
+
+        /////line up 4//
+        txtF_ACF_Lineup_4_Artist_1_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_4_Artist_1_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_4_Artist_2_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_4_Artist_2_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_4_Artist_3_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_4_Artist_3_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_4_Artist_4_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_4_Artist_4_lastName.setText(artist.getLast_name());
+
+        txtF_ACF_Lineup_4_Artist_5_FirstName.setText(artist.getFirst_name());
+        txtF_ACF_Lineup_4_Artist_5_lastName.setText(artist.getLast_name());
+
+
+
+    }
+    public void setAgentDeatils(Agent agent){
+        currentAgent = agent;
+
+        //////line up 1
+        txtF_ACF_Lineup_1_agentFirstName.setText(agent.getFirst_name());
+        txtF_ACF_Lineup_1_agentLastName.setText(agent.getLast_name());
+        txtF_ACF_Lineup_1_agentEmail.setText(agent.getAgent_email());
+        txtF_ACF_Lineup_1_agentNo.setText(agent.getAgent_contact_no().toString());
+
+        //line up 2
+        txtF_ACF_Lineup_2_agentFirstName.setText(agent.getFirst_name());
+        txtF_ACF_Lineup_2_agentLastName.setText(agent.getLast_name());
+        txtF_ACF_Lineup_2_agentEmail.setText(agent.getAgent_email());
+        txtF_ACF_Lineup_2_agentNo.setText(agent.getAgent_contact_no().toString());
+
+        ///line up 3
+        txtF_ACF_Lineup_3_agentFirstName.setText(agent.getFirst_name());
+        txtF_ACF_Lineup_3_agentLastName.setText(agent.getLast_name());
+        txtF_ACF_Lineup_3_agentEmail.setText(agent.getAgent_email());
+        txtF_ACF_Lineup_3_agentNo.setText(agent.getAgent_contact_no().toString());
+
+        ///line up 4
+        txtF_ACF_Lineup_4_agentFirstName.setText(agent.getFirst_name());
+        txtF_ACF_Lineup_4_agentLastName.setText(agent.getLast_name());
+        txtF_ACF_Lineup_4_agentEmail.setText(agent.getAgent_email());
+        txtF_ACF_Lineup_4_agentNo.setText(agent.getAgent_contact_no().toString());
+    }
+
+    public void setLineUpDetails(LineUp lineUp){
+        currentLineUp = lineUp;
+
+        ///line up 1
+        txtF_ACF_Lineup_1_time.setText(lineUp.getPerformance_time());
+        txtF_ACF_Lineup_1_performanceName.setText(lineUp.getPerformance_name());
+
+        ///line up 2
+        txtF_ACF_Lineup_2_time.setText(lineUp.getPerformance_time());
+        txtF_ACF_Lineup_2_performanceName.setText(lineUp.getPerformance_name());
+
+        ///line up 3
+        txtF_ACF_Lineup_3_time.setText(lineUp.getPerformance_time());
+        txtF_ACF_Lineup_3_performanceName.setText(lineUp.getPerformance_name());
+
+        ///line up 4
+        txtF_ACF_Lineup_4_time.setText(lineUp.getPerformance_time());
+        txtF_ACF_Lineup_4_performanceName.setText(lineUp.getPerformance_name());
+    }
+
+    public void saveArtistButton(){
+        Artist artist = new Artist();
+        currentArtist = artist;
+
+         Agent agent = new Agent();
+         currentAgent = agent;
+
+         LineUp lineUp = new LineUp();
+         currentLineUp = lineUp;
+
+                ////////line up 1
+        artist.setFirst_name(txtF_ACF_Lineup_1_Artist_1_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_1_Artist_1_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_1_Artist_2_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_1_Artist_2_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_1_Artist_3_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_1_Artist_3_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_1_Artist_4_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_1_Artist_4_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_1_Artist_5_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_1_Artist_5_lastName.getText());
+
+        agent.setFirst_name(txtF_ACF_Lineup_1_agentFirstName.getText());
+        agent.setLast_name(txtF_ACF_Lineup_1_agentLastName.getText());
+        agent.setAgent_email(txtF_ACF_Lineup_1_agentEmail.getText());
+        agent.setAgent_contact_no(txtF_ACF_Lineup_1_agentNo.getText());
+
+        lineUp.setPerformance_time(txtF_ACF_Lineup_1_time.getText());
+        lineUp.setPerformance_name(txtF_ACF_Lineup_1_performanceName.getText());
+
+
+        ///////// line up 2
+        artist.setFirst_name(txtF_ACF_Lineup_2_Artist_1_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_2_Artist_1_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_2_Artist_2_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_2_Artist_2_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_2_Artist_3_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_2_Artist_3_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_2_Artist_4_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_2_Artist_4_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_2_Artist_5_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_2_Artist_5_lastName.getText());
+
+        agent.setFirst_name(txtF_ACF_Lineup_2_agentFirstName.getText());
+        agent.setLast_name(txtF_ACF_Lineup_2_agentLastName.getText());
+        agent.setAgent_email(txtF_ACF_Lineup_2_agentEmail.getText());
+        agent.setAgent_contact_no(txtF_ACF_Lineup_2_agentNo.getText());
+
+        lineUp.setPerformance_time(txtF_ACF_Lineup_2_time.getText());
+        lineUp.setPerformance_name(txtF_ACF_Lineup_2_performanceName.getText());
+
+        ///line up 3
+        artist.setFirst_name(txtF_ACF_Lineup_3_Artist_1_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_3_Artist_1_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_3_Artist_2_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_3_Artist_2_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_3_Artist_3_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_3_Artist_3_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_3_Artist_4_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_3_Artist_4_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_3_Artist_5_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_3_Artist_5_lastName.getText());
+
+        agent.setFirst_name(txtF_ACF_Lineup_3_agentFirstName.getText());
+        agent.setLast_name(txtF_ACF_Lineup_3_agentLastName.getText());
+        agent.setAgent_email(txtF_ACF_Lineup_3_agentEmail.getText());
+        agent.setAgent_contact_no(txtF_ACF_Lineup_3_agentNo.getText());
+
+        lineUp.setPerformance_time(txtF_ACF_Lineup_3_time.getText());
+        lineUp.setPerformance_name(txtF_ACF_Lineup_3_performanceName.getText());
+
+    ///line up 4
+        artist.setFirst_name(txtF_ACF_Lineup_4_Artist_1_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_4_Artist_1_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_4_Artist_2_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_4_Artist_2_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_4_Artist_3_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_4_Artist_3_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_4_Artist_4_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_4_Artist_4_lastName.getText());
+
+        artist.setFirst_name(txtF_ACF_Lineup_4_Artist_5_FirstName.getText());
+        artist.setLast_name(txtF_ACF_Lineup_4_Artist_5_lastName.getText());
+
+        agent.setFirst_name(txtF_ACF_Lineup_4_agentFirstName.getText());
+        agent.setLast_name(txtF_ACF_Lineup_4_agentLastName.getText());
+        agent.setAgent_email(txtF_ACF_Lineup_4_agentEmail.getText());
+        agent.setAgent_contact_no(txtF_ACF_Lineup_4_agentNo.getText());
+
+        lineUp.setPerformance_time(txtF_ACF_Lineup_4_time.getText());
+        lineUp.setPerformance_name(txtF_ACF_Lineup_4_performanceName.getText());
+
+
+
+
+
+        new ArtistDAO().addArtist(artist);
+        new AgentDAO().addAgent(agent);
+        new LineUpDAO().addLineUp(lineUp);
+    }
 
 
 

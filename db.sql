@@ -125,17 +125,17 @@ CREATE TABLE `LINEUP` (
 
 
 -- ---
--- Table 'Artist'
+-- Table 'ARTIST'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `Artist`;
+DROP TABLE IF EXISTS `ARTIST`;
 		
-CREATE TABLE `Artist` (
+CREATE TABLE `ARTIST` (
   `id` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `first_name` VARCHAR(25) NULL DEFAULT NULL,
   `last_name` VARCHAR(25) NULL DEFAULT NULL,
-  `Agent` VARCHAR(25) NULL DEFAULT NULL,
+  `agent_id` INTEGER NOT NULL ,
   PRIMARY KEY (`id`)
 );
 
@@ -178,7 +178,7 @@ ALTER TABLE `BOOKING` ADD FOREIGN KEY (payment_id) REFERENCES `PAYMENT` (`id`);
 ALTER TABLE `BOOKING` ADD FOREIGN KEY (festival_id) REFERENCES `FESTIVAL` (`id`);
 ALTER TABLE `BOOKING` ADD FOREIGN KEY (user_id) REFERENCES `USER` (`id`);
 ALTER TABLE `FESTIVAL` ADD FOREIGN KEY (line_up_id) REFERENCES `LINEUP` (`id`);
-ALTER TABLE `LINEUP` ADD FOREIGN KEY (artist_id) REFERENCES `Artist` (`id`);
+ALTER TABLE `LINEUP` ADD FOREIGN KEY (artist_id) REFERENCES `ARTIST`  (`id`);
 ALTER TABLE `TICKET` ADD FOREIGN KEY (booking_id) REFERENCES `BOOKING` (`id`);
 ALTER TABLE `Invoice` ADD FOREIGN KEY (user_id) REFERENCES `USER` (`id`);
 ALTER TABLE `Invoice` ADD FOREIGN KEY (user_id) REFERENCES `BOOKING` (`id`);
@@ -199,7 +199,7 @@ ALTER TABLE `user` ADD UNIQUE(`email_address`);
 -- ALTER TABLE `USER` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 -- ALTER TABLE `PAYMENT` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 -- ALTER TABLE `TICKET` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
--- ALTER TABLE `Artist` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `ARTIST` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 -- ALTER TABLE `Invoice` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- ---
@@ -214,11 +214,11 @@ ALTER TABLE `user` ADD UNIQUE(`email_address`);
 -- ('','','','','','','','','','','','','','','','','','','','');
 -- INSERT INTO `PAYMENT` (`id`,`charge`,`card_no`) VALUES
 -- ('','','');
--- INSERT INTO `LINEUP` (`id`,`performance_time`,`artist`) VALUES
--- ('','','');
+-- INSERT INTO `LINEUP` (`id`,`performance_time`,`artist_id`,`performance_name` ) VALUES
+-- ('','','','');
 -- INSERT INTO `TICKET` (`id`,`booking_id`,`ticket_type`) VALUES
 -- ('','','');
--- INSERT INTO `Artist` (`id`,`first_name`,`last_name`,`agent_ id`) VALUES
+-- INSERT INTO `ARTIST` (`id`,`first_name`,`last_name`,`agent_ id`) VALUES
 -- ('','','','');
 -- INSERT INTO `AGENT` (`id`,`first_name`,`last_name`,agent_contract_no`,`agent_email`) VALUES
 -- ('','','','','');

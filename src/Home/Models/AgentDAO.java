@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class AgentDAO {
 
 
-    public void addAgent(Agent agent) {
+    public boolean addAgent(Agent agent) {
         boolean queryPassed = true;
         try {
             Connection connection = DatabaseUtility.getInstance().getConnection();
@@ -19,13 +19,19 @@ public class AgentDAO {
                 preparedStatement.setString(3,agent.getAgent_contact_no().toString());
                 preparedStatement.setString(4,agent.getAgent_email());
 
+                System.out.println(preparedStatement);
+                preparedStatement.execute();
+
 
 
             }
             catch (SQLException e) {
             }
         }catch (Exception ex){
-
+            System.out.println(ex.fillInStackTrace());
+            queryPassed = false;
+        } finally {
+            return queryPassed;
         }
 
     }

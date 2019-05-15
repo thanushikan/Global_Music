@@ -2,5 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/db.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/Home/Models/ArtistDAO.java" dialect="ClickHouse" />
   </component>
 </project>

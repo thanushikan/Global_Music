@@ -23,6 +23,7 @@ public class FestivalDAO {
             try {
                 PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO `festival` (`city`, `postcode`, `date`, `festival_name`, `venue`, `description`, `tickets_available`, `line_up_id`, `ticket_price`, `event_type`) VALUES ( ?,?,?,?, ?, ?, ?,?, ?,?);");
                 preparedStatement.setString(1, festival.getCity());
+
                 preparedStatement.setString(2, festival.getPostcode());
                 preparedStatement.setString(3, festival.getDate(false));
                 preparedStatement.setString(4, festival.getFestival_name());
