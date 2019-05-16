@@ -2,24 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="vv1">
-      <change afterPath="$PROJECT_DIR$/src/Home/Models/LineUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Home/Models/LineUpDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Controllers/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/Agent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/AgentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/AgentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/Artist.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/ArtistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/ArtistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/Festival.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/Festival.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/FestivalDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/FestivalDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Models/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Models/UserDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Views/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Views/Application.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Views/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Views/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Views/RegisterPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Views/RegisterPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/Home/Views/registrationPages.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Home/Views/registrationPages.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Controllers/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Models/AgentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/AgentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/Models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/Artist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Models/ArtistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/ArtistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Models/Festival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/Festival.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Models/FestivalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/FestivalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Models/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Models/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home/Views/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Views/Application.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Views/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Views/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Views/RegisterPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Views/RegisterPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/Views/registrationPages.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/Views/registrationPages.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,35 +109,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="482" column="42" selection-start-line="482" selection-start-column="42" selection-end-line="482" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="82">
+              <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Home/Models/Festival.java">
+        <entry file="file://$PROJECT_DIR$/src/Home/Models/BandDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Home/Models/LineUp.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Home/Models/Band.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -138,12 +139,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="158" column="57" selection-start-line="158" selection-start-column="57" selection-end-line="158" selection-end-column="57" />
+            <state relative-caret-position="2363">
+              <caret line="155" column="57" selection-start-line="155" selection-start-column="57" selection-end-line="155" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2319#2320#0" expanded="true" />
-                <element signature="e#2359#2360#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/LineUpDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="595">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,11 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/AgentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1037">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -176,11 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/FestivalDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="38" selection-start-line="36" selection-start-column="16" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -188,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="77" selection-start-line="77" selection-end-line="78" />
+            <state relative-caret-position="833">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="220" column="3" selection-start-line="220" selection-start-column="3" selection-end-line="221" selection-end-column="17" />
+            <state relative-caret-position="4012">
+              <caret line="236" column="3" selection-start-line="236" selection-start-column="3" selection-end-line="236" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -209,11 +202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home/Models/ArtistDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1003">
+              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -324,9 +314,9 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -338,26 +328,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="GUI" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="GUI" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="GUI" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="GUI" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -406,6 +376,26 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="GUI" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="GUI" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="GUI" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="GUI" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +412,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557938557517" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="GenericSQL" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Home/Models/Festival.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -502,6 +492,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -582,6 +573,7 @@
       <workItem from="1557838810196" duration="266000" />
       <workItem from="1557839322257" duration="21321000" />
       <workItem from="1557862368195" duration="16240000" />
+      <workItem from="1557977666307" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="vv1">
       <created>1556028861938</created>
@@ -594,7 +586,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206461000" />
+    <option name="totallyTimeSpent" value="206846000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -609,7 +601,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28456375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14228188" />
       <window_info id="Structure" order="1" weight="0.24630873" />
       <window_info id="Favorites" order="2" weight="0.3281879" />
       <window_info id="Designer" order="3" />
@@ -618,7 +610,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23796034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23796034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2776204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -629,7 +621,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32577905" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3101983" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3101983" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" />
@@ -699,21 +691,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Home/Models/UserDAO.java</url>
-          <line>56</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Home/Models/UserDAO.java</url>
-          <line>121</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Home/Models/FestivalDAO.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -728,8 +714,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Browser Downloads/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/src/testing/dbh/DBUtil.java" />
-    <entry file="file://D:/Browser Downloads/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/src/application/model/User.java" />
     <entry file="file://D:/Browser Downloads/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/booking-system-02dfce3ff1eac6511b28f8d7e43496246f6aeb20/src/application/model/UserDAO.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.sql/java/sql/Connection.java" />
     <entry file="file://$USER_HOME$/Downloads/DesignPatterns12 - DAO Classes/src/com/caveofprogramming/designpatterns/demo1/model/Database.java" />
@@ -789,13 +773,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/java/sql/Connection.java" />
     <entry file="jar://$PROJECT_DIR$/lib/javafx.graphics.jar!/com/sun/glass/ui/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
@@ -804,12 +782,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Views/Application.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="387" column="207" selection-start-line="387" selection-start-column="186" selection-end-line="387" selection-end-column="207" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -893,47 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Models/Festival.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="220" column="3" selection-start-line="220" selection-start-column="3" selection-end-line="221" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Models/ArtistDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="158" column="57" selection-start-line="158" selection-start-column="57" selection-end-line="158" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2319#2320#0" expanded="true" />
-            <element signature="e#2359#2360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Models/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" selection-start-line="77" selection-end-line="78" />
+        <state relative-caret-position="2244">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -947,20 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Models/FestivalDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" selection-start-line="36" selection-start-column="16" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Models/AgentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="2363">
+          <caret line="155" column="57" selection-start-line="155" selection-start-column="57" selection-end-line="155" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -969,21 +898,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Models/LineUpDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="595">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/AgentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="482" column="42" selection-start-line="482" selection-start-column="42" selection-end-line="482" selection-end-column="42" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/FestivalDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4012">
+          <caret line="236" column="3" selection-start-line="236" selection-start-column="3" selection-end-line="236" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/ArtistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/BandDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home/Models/Band.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

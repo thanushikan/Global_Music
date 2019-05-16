@@ -8,32 +8,6 @@ import java.util.List;
 // use CRUD Create , retrieve, update, delete
 public class UserDAO {
 
-
-    public boolean registerPaymentDetails(String charge, String cardNo, String expireDate, String cardholderName, String cvsNo) throws SQLException {
-        boolean queryPassed = true;
-        Connection connection = DatabaseUtility.getInstance().getConnection();
-        // String querySql = "INSERT INTO `payment` (`id`, `charge`, `card_no`, `expire_Date`, `cardholder_Name`, `cvs_No`) VALUES" +
-        //        "(NULL, '"+charge+"', '"+cardNo+"', '"+expireDate+"', '"+cardholderName+"', '"+cvsNo+"');";
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = connection.prepareStatement("INSERT INTO `payment` (`id`, `charge`, `card_no`, `expire_Date`, `cardholder_Name`, `cvs_No`) " +
-                    "VALUES(NULL, '?', '?', '?', '?', '?');");
-            preparedStatement.setString(1, charge);
-            preparedStatement.setString(2, cardNo);
-            preparedStatement.setString(3, expireDate);
-            preparedStatement.setString(4, cardholderName);
-            preparedStatement.setString(5, cvsNo);
-
-            preparedStatement.executeUpdate();
-        } catch (Exception ex) {
-            System.out.println(ex.fillInStackTrace());
-            queryPassed = false;
-        } finally {
-            preparedStatement.close();//Issue with exception handling check later once payment model is made!!!
-            return queryPassed;
-        }
-    }
-
     public boolean registerUser(User user) {
         boolean queryPassed = true;
         Connection connection = DatabaseUtility.getInstance().getConnection();
@@ -58,7 +32,7 @@ public class UserDAO {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO `USER` " +
                     "(`title`,`first_name`,`last_name`,`gender`,`address_line`,`address_line2`,`town`,`county`," +
-                    "`postcode`,`dob`,`contact_name`,`organisation_name`,`email_address`,`phone_no`,`mobile_no`," +
+                    "`postcode`,`dob`,`contact_name`,`organisation_name`,`email_address`,`contact_no`,`mobile_no`," +
                     "`web_address`,`password`,`is_corporate`,`is_admin`,`is_organiser`)" +
                     " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);");
             preparedStatement.setString(1, user.getTitle());
@@ -75,7 +49,7 @@ public class UserDAO {
             preparedStatement.setString(11, user.getContactName());
             preparedStatement.setString(12, user.getOrganisationName());
             preparedStatement.setString(13, user.getEmailAddress());
-            preparedStatement.setString(14, user.getPhoneNumber());
+            preparedStatement.setString(14, user.getContactNumber());
             preparedStatement.setString(15, user.getMobileNumber());
             preparedStatement.setString(16, user.getWebAddress());
             preparedStatement.setString(17, user.getPassword());
@@ -161,7 +135,7 @@ public class UserDAO {
         user.setContactName(rs.getString("contact_name"));
         user.setOrganisationName(rs.getString("organisation_name"));
         user.setEmailAddress(rs.getString("email_address"));
-        user.setPhoneNumber(rs.getString("phone_no"));
+        user.setContactNumber(rs.getString("contact_no"));
         user.setMobileNumber(rs.getString("mobile_no"));
         user.setWebAddress(rs.getString("web_address"));
         user.setPassword(rs.getString("password"));
@@ -191,7 +165,7 @@ public class UserDAO {
             tinyintIsOrganiser = 1;
         }
         //  PreparedStatement preparedStatement = DatabaseUtility.getInstance().getConnection().prepareStatement("UPDATE `user` SET `id`=`?`,`title`=`?`,`first_name`=`?`,`last_name`=`?`,`gender`=`?`,`address_line`=`?`,`address_line2`=`?`,`town`=`?`,`county`=`?`,`postcode`=`?`,`dob`=`?`,`contact_name`=`?`,`organisation_name`=`?`,`email_address`=`?`,`phone_no`=`?`,`mobile_no`=`?`,`web_address`=`?`,`password`=`?`,`is_corporate`=`?`,`is_admin`=`?`,`is_organiser`=`?` WHERE `id`=`?`;");
-        PreparedStatement preparedStatement = DatabaseUtility.getInstance().getConnection().prepareStatement("UPDATE `user` SET `id`=?,`title`=?,`first_name`=?,`last_name`=?,`gender`=?,`address_line`=?,`address_line2`=?,`town`=?,`county`=?,`postcode`=?,`dob`=?,`contact_name`=?,`organisation_name`=?,`email_address`=?,`phone_no`=?,`mobile_no`=?,`web_address`=?,`password`=?,`is_corporate`=?,`is_admin`=?,`is_organiser`=? WHERE `id`=?;");
+        PreparedStatement preparedStatement = DatabaseUtility.getInstance().getConnection().prepareStatement("UPDATE `user` SET `id`=?,`title`=?,`first_name`=?,`last_name`=?,`gender`=?,`address_line`=?,`address_line2`=?,`town`=?,`county`=?,`postcode`=?,`dob`=?,`contact_name`=?,`organisation_name`=?,`email_address`=?,`contact_no`=?,`mobile_no`=?,`web_address`=?,`password`=?,`is_corporate`=?,`is_admin`=?,`is_organiser`=? WHERE `id`=?;");
 
         System.out.println(preparedStatement);
         preparedStatement.setString(1, (String.valueOf(user.getId())));
@@ -209,7 +183,7 @@ public class UserDAO {
         preparedStatement.setString(12, user.getContactName());
         preparedStatement.setString(13, user.getOrganisationName());
         preparedStatement.setString(14, user.getEmailAddress());
-        preparedStatement.setString(15, user.getPhoneNumber());
+        preparedStatement.setString(15, user.getContactNumber());
         preparedStatement.setString(16, user.getMobileNumber());
         preparedStatement.setString(17, user.getWebAddress());
         preparedStatement.setString(18, user.getPassword());

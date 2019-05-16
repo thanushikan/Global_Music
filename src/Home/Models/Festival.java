@@ -1,9 +1,5 @@
 package Home.Models;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
-
-import java.math.BigInteger;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,19 +14,16 @@ public class Festival {
     private String venue;
     private String description;
     private String tickets_available;
-    private String line_up_id;
+    private String band_id;
     private String ticket_price;
     private String event_type;
 
+    public Festival() {}
 
-    public Festival() {
-
-}
-//ask Jack about String line up ID; id not this parameter
-    public Festival(String city,String postcode,String date,String festival_name,String venue,String description,String tickets_available,
-                    String line_up_id,String ticket_price,String event_type){
+    public Festival(String city, String postcode, String date, String festival_name, String venue, String description, String tickets_available,
+                    String band_id, String ticket_price, String event_type){
         this.city = city; this.postcode = postcode; this.date = date; this.festival_name = festival_name; this.venue = venue; this.description = description;
-        this.tickets_available = tickets_available; this.line_up_id = line_up_id; this.ticket_price = ticket_price;this.event_type = event_type;
+        this.tickets_available = tickets_available; this.band_id = band_id; this.ticket_price = ticket_price;this.event_type = event_type;
     }
 
     public int getId() {
@@ -139,11 +132,11 @@ public class Festival {
         this.tickets_available = tickets_available;
     }
 
-    public String getLine_up_id(){
-        return line_up_id;
+    public String getBand_id(){
+        return band_id;
     }
-    public void setLine_up_id(String line_up_id) {
-        this.line_up_id = line_up_id;
+    public void setBand_id(String band_id) {
+        this.band_id = band_id;
     }
 
     public String getTicket_price(){

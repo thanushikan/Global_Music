@@ -2,11 +2,8 @@ package Home.Models;
 
 import java.math.BigInteger;
 
-import java.text.DateFormat;
-import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 public class User {
@@ -25,7 +22,7 @@ public class User {
     private String contactName;
     private String organisationName;
     private String emailAddress;
-    private BigInteger phoneNumber;
+    private BigInteger contactNumber;
     private BigInteger mobileNumber;
     private String webAddress;
     private String password;
@@ -37,13 +34,13 @@ public class User {
 
     }
 
-    public User(String title,String firstName,String lastName,String gender,String addressLine1,String addressLine2,String town,String county,
-                String postcode,String dob,String contactName,String organisationName,String emailAddress,BigInteger phoneNumber,BigInteger mobileNumber,
-                String webAddress, String password,Boolean isCorporate,Boolean isAdmin,Boolean isOrganiser) {
+    public User(String title, String firstName, String lastName, String gender, String addressLine1, String addressLine2, String town, String county,
+                String postcode, String dob, String contactName, String organisationName, String emailAddress, BigInteger contactNumber, BigInteger mobileNumber,
+                String webAddress, String password, Boolean isCorporate, Boolean isAdmin, Boolean isOrganiser) {
                 this.title = title; this.firstName=firstName; this.lastName=lastName; this.gender = gender; this.addressLine1 =addressLine1;
                 this.addressLine2 = addressLine2; this.town = town; this.county =county; this.postcode = postcode;
                 this.setDOB(false,dob);this.contactName=contactName;
-                this.organisationName=organisationName; this.emailAddress=emailAddress;this.phoneNumber=phoneNumber;this.mobileNumber=mobileNumber;this.webAddress=webAddress;
+                this.organisationName=organisationName; this.emailAddress=emailAddress;this.contactNumber = contactNumber;this.mobileNumber=mobileNumber;this.webAddress=webAddress;
                 this.password=password; this.isCorporate=isCorporate;this.isAdmin=isAdmin;this.isOrganiser=isOrganiser;
     }
 
@@ -143,8 +140,8 @@ public class User {
     public String getEmailAddress() {
         System.out.println(this.emailAddress);
         return this.emailAddress;}
-    public void setPhoneNumber(String phoneNumber){this.phoneNumber = new BigInteger(phoneNumber); }
-    public String getPhoneNumber() {return this.phoneNumber.toString();}
+    public void setContactNumber(String contactNumber){this.contactNumber = new BigInteger(contactNumber); }
+    public String getContactNumber() {return this.contactNumber.toString();}
     public void setMobileNumber(String mobileNumber){this.mobileNumber = new BigInteger(mobileNumber); }
     public String getMobileNumber() {return this.mobileNumber.toString();}
     public void setWebAddress(String webAddress){this.webAddress = webAddress; }
