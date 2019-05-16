@@ -14,6 +14,8 @@ import java.util.ResourceBundle;
 
 import Home.Models.User;
 import Home.Models.UserDAO;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -129,14 +131,14 @@ public class Registration implements Initializable {
         if (txt_RegularUser_firstName.getText().equals("")) {
             //set label text "firstname is empty please enter a first name"
         }
-        Boolean UserDetailsRegisteredSuccessfully = new UserDAO().registerUser(new User("MR", txt_RegularUser_firstName.getText(), txt_RegularUser_LastName.getText(),
-                "MALE",
+        Boolean UserDetailsRegisteredSuccessfully = new UserDAO().registerUser(new User(cb_reg_title.getValue(), txt_RegularUser_firstName.getText(), txt_RegularUser_LastName.getText(),
+                cb_reg_gender.getValue(),
                 txt_RegularUser_AddressLine1.getText(),
                 txt_RegularUser_AddressLine2.getText(),
                 txt_RegularUser_Town.getText(), txt_RegularUser_County.getText(), txt_RegularUser_Postcode.getText(),
                 txt_RegularUser_dob.getText(), txt_RegularUser_ContactName.getText(), txt_RegularUser_OrganisationName.getText(),
                 txt_RegularUser_Email.getText(), new BigInteger(txt_RegularUser_HomePhone.getText()), new BigInteger(txt_RegularUser_MobileNumber.getText()),
-                txt_RegularUser_WebAddress.getText(), txt_RegularUser_Password.getText(), false, false, false));
+                txt_RegularUser_WebAddress.getText(), txt_RegularUser_Password.getText(), isCorporate(), false, isOrganizer()));
 
 
        /* "MR",txt_RegularUser_firstName.getText(),txt_RegularUser_LastName.getText(),
@@ -162,9 +164,40 @@ public class Registration implements Initializable {
             pnl_Login.toFront();
         }
     }
+    private boolean isCorporate(){
+        if (cb_reg_UserTypes.getValue() =="Corporate"){
+            return true;
+        }
+        return false;
+    }
+    private boolean isOrganizer(){
+        if(cb_reg_UserTypes.getValue() == "Organizer"){
+            return true;
+        }
+        return false;
+    }
+
+    @FXML
+    private ComboBox<String> cb_reg_UserTypes = new ComboBox<>();
+    @FXML
+    private ComboBox<String> cb_reg_gender = new ComboBox<>();
+    @FXML
+    private ComboBox<String> cb_reg_title = new ComboBox<>();
+
+    private ObservableList<String> userTypeList = FXCollections.observableArrayList("Regular","Corporate","Organizer");
+
+    private ObservableList<String> genderTypeList = FXCollections.observableArrayList("Male","Female","Other","Prepare Not Say");
+    private ObservableList<String>titleList = FXCollections.observableArrayList("Mr","Mrs","Ms","Dr","Lord","Lady");
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //todo
+
+        cb_reg_UserTypes.setItems(userTypeList);
+        cb_reg_gender.setItems(genderTypeList);
+        cb_reg_title.setItems(titleList);
+
+
     }
 }

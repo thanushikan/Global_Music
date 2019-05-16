@@ -17,9 +17,9 @@
    <children>
       <Pane fx:id="pnl_RegisterUser" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #23272a;">
          <children>
-            <ComboBox fx:id="cb_reg_acctype" layoutX="78.0" layoutY="81.0" prefHeight="29.0" prefWidth="213.0" promptText="Account Type" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="cb_reg_UserTypes" layoutX="78.0" layoutY="81.0" prefHeight="29.0" prefWidth="213.0" promptText="Account Type" style="-fx-background-color: #ffffff;" />
             <ComboBox fx:id="cb_reg_title" layoutX="78.0" layoutY="164.0" prefHeight="25.0" prefWidth="72.0" promptText="Title" style="-fx-background-color: #ffffff;" />
-            <ComboBox fx:id="cb_reg_gen" layoutX="158.0" layoutY="164.0" prefHeight="25.0" prefWidth="133.0" promptText="Gender" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="cb_reg_gender" layoutX="158.0" layoutY="164.0" prefHeight="25.0" prefWidth="133.0" promptText="Gender" style="-fx-background-color: #ffffff;" />
             <TextField fx:id="txt_RegularUser_firstName" layoutX="78.0" layoutY="201.0" prefHeight="26.0" prefWidth="213.0" promptText="First Name*" style="-fx-background-color: #ffffff;" />
             <TextField fx:id="txt_RegularUser_LastName" layoutX="78.0" layoutY="232.0" prefHeight="26.0" prefWidth="213.0" promptText="Last Name*" style="-fx-background-color: #ffffff;" />
             <TextField fx:id="txt_RegularUser_AddressLine1" layoutX="78.0" layoutY="269.0" prefHeight="26.0" prefWidth="213.0" promptText="1st line of Address*" style="-fx-background-color: #ffffff;" />
